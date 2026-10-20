@@ -352,6 +352,7 @@ function renderLabel(l) {
   p.innerHTML = `
     <div class="eyebrow"><span class="tag" style="background:var(--accent)">Paper</span><span class="proved">${ids.length ? 'Formalized' : ''}</span></div>
     ${paperBlock(l)}
+    ${PL[l] && PL[l].kind === 'remark' && !ids.length ? '<p class="source">Remarks are part of the paper informal discussion, and were not formalized.</p>' : ''}
     <div class="algo-sec"><h3>Lean statements (${ids.length})</h3>
     ${ids.map(i => `<div class="anchor"><h4><span>${esc(BY[i].short)}</span><button type="button" class="linkbtn ref-open" data-id="${esc(i)}">Open</button></h4>
       <p class="atitle">${inlineCode(BY[i].title)}</p><pre>${leanHL(BY[i].statement, BY[i].short.replace(/[^.]*$/, ''))}</pre></div>`).join('') || '<p class="empty">No Lean statement cites it directly.</p>'}</div>`;
