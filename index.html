@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lean Proof Maps</title>
+<style>
+  :root {
+    --bg: #fbfaf7; --fg: #1d1d1b; --muted: #5f5e58; --line: #dedbd2; --accent: #2f5fa7;
+    --panel: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15171c; --fg: #e8e6e1; --muted: #a3a19a; --line: #2c2f37; --accent: #8db4ef;
+      --panel: #1c1f26;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15171c; --fg: #e8e6e1; --muted: #a3a19a; --line: #2c2f37; --accent: #8db4ef;
+    --panel: #1c1f26;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+  p.lead { color: var(--muted); margin: 0 0 32px; }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  a.card {
+    display: block; padding: 16px 18px; border: 1px solid var(--line); border-radius: 10px;
+    background: var(--panel); color: inherit; text-decoration: none;
+  }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); }
+  .title { font-weight: 600; color: var(--accent); }
+  .desc { color: var(--muted); font-size: 0.95rem; margin-top: 2px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Lean Proof Maps</h1>
+  <p class="lead">Dependency graphs of the Lean 4 formalizations of papers by Jean-Marie Mirebeau
+  and coauthors. Each page lists the frozen Lean statements of one paper, with the anchors each
+  proof rests on.</p>
+  <ul>
+    <li><a class="card" href="GuaranteedSubsol/">
+      <div class="title">A narrow band method for non-causal discretizations of anisotropic
+      eikonal equations, with adaptive width, sub- and super-solution construction, and
+      quasi-linear complexity</div>
+      <div class="desc">Jean-Marie Mirebeau, Yanis Mouheb (preprint). All the lemmas,
+      propositions and theorems, proved in Lean 4.</div>
+    </a></li>
+  </ul>
+  <footer>Links of the form <code>GuaranteedSubsol/#label=lem:max_min</code> open the anchors of a
+  given LaTeX label.</footer>
+</main>
+</body>
+</html>
