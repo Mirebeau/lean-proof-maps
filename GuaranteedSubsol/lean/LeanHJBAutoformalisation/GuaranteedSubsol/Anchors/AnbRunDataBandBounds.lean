@@ -14,7 +14,7 @@ ANB, `B_n ⊂ {t⁻_n ≤ u_* < t⁺_n}`, with `t⁻_n = t_n - Δ_n` (`AnbStepDa
 Hypotheses: the parts of Assumption assum:all used by the proof, in the form of
 `subsol_growth` (shared Dirichlet data `ubd` outside `I = Int X`; `Λ` monotone with `Λ[0] ≥ 0`,
 additively invariant, with `C_past`-memory and `C_Γ, C'_Γ`-comparable with `Γ` on `Int X`; `Γ`
-monotone, causal, `Γ ≤ Λ`), the comparison principle (eq. eq:comparison_Lambda, as in V1; see
+monotone, causal, `Γ ≤ Λ`), the comparison principle (eq. eq:comparison_Lambda, as in the paper; see
 `le_of_subSolution_superSolution`), a fixed point `u_*` (`uFix`) of `Λ`, and `α > 0`, `τ ≥ 0`,
 `ε > 0`. `Γ` additively invariant, the finite super-solution (`u_*` is one) and the positive
 boundary conditions (beyond `Λ[0] ≥ 0`) are not used, hence omitted. `X` is finite and linearly

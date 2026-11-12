@@ -8,8 +8,8 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiSubProof
 /-!
 # Frozen statement: total number of updates of the sub-solution variant of the parallel AGSI
 
-Source: Algorithm algo:agsi_parallel (AGSI2.tex), sub-solution variant, and a V0
-`\formalizationInstruction` below it, removed in V1 (author's request), with sub- and
+Source: Algorithm algo:agsi_parallel (AGSI2.tex), sub-solution variant (author's
+request), with sub- and
 super-solutions exchanged: if `Φ` is monotone,
 satisfies the comparison principle and admits a super-solution `w`, and `v` is a sub-solution,
 then `η` times the total number of updates is at most `∑_X (w - v)`.

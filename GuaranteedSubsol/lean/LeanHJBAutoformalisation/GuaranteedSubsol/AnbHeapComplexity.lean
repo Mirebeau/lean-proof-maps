@@ -11,7 +11,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AnbAgsiProof
 /-!
 # Complexity of the ANB with sorted lists (prop:complexity_lazy): the three instances
 
-Prop. prop:complexity_lazy (Complexity.tex, V1) under the assumptions of Theorems th:complexity,
+Prop. prop:complexity_lazy (Complexity.tex) under the assumptions of Theorems th:complexity,
 th:complexity_withUnknown and th:complexity_with_agsi (author's decision: ordinary theorems, not
 frozen anchors). Each instance is the frozen `anbHeapRun_cost_le` (`AnbHeapCostProof.cost_le`) with
 the uniform bounds of the corresponding complexity theorem: `countB' ≤ N_Γ` selections by

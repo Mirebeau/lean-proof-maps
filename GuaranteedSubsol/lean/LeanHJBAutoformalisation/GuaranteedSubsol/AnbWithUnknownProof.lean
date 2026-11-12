@@ -287,7 +287,7 @@ theorem stopIndex_le (h : HypU q I ubd CΓ CΓ' uFix) :
     anbStopIndex q.p ≤ ((⌈q.nMax uFix⌉₊ + 1 : ℕ) : ℕ∞) :=
   stopIndex_le_of h.toWidth
 
-/-- Prop. prop:niter_while_withUnknown (V1): the two inner loops of iteration `k` perform at most
+/-- Prop. prop:niter_while_withUnknown: the two inner loops of iteration `k` perform at most
 `⌈(2Δ_max/α + ln(β/α) - ln(1-ρ))/(-ln σ)⌉` passes (constant of lem:pow_cvx). -/
 theorem passes_le (h : HypU q I ubd CΓ CΓ' uFix) (k : ℕ) :
     (anbRunData q.p k).passesSub ≤ (q.NΛ'' : ℕ∞) ∧

@@ -10,7 +10,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AnbWithUnknownProof
 
 Source: Corollary corol:max_width_withUnknown (Complexity.tex), first claim: the stopping
 index `anbStopIndex` of the ANB (`⊤` in `ℕ∞` if the stopping test never holds) is at most
-`⌈nMax⌉₊ + 1`, where V1's `n_max = ⌈nMax⌉₊`, `nMax := (‖u_*‖_∞ + Δ_max)/τ`
+`⌈nMax⌉₊ + 1`, where the paper's `n_max = ⌈nMax⌉₊`, `nMax := (‖u_*‖_∞ + Δ_max)/τ`
 (`AnbParams.WithUnknown.nMax`), as for
 `anbStopIndex_le` (the iteration `0` of the Lean version is vacuous).
 Hypotheses: those of Corollary corol:max_width_withUnknown: the parts of assum:all used
@@ -19,7 +19,7 @@ Hypotheses: those of Corollary corol:max_width_withUnknown: the parts of assum:a
 `(1 - σ)^β ≤ (1 - ρ)^α`, a fixed point `u_*`, `0 < ε ≤ ε_max` and `2Δ_max ≤ u_bd`. The constants
 `β`, `σ` are unknown: they are not parameters of the algorithm, which only uses `q.p`
 (`AnbParams.WithUnknown`, author's decision, 2026-10-14). `Δ_max := 2β ln(2eC/ε) + 2τ`
-(`AnbParams.WithUnknown.Δmax`, as in V1; V0 had `+ τ`). `X` is finite and linearly ordered
+(`AnbParams.WithUnknown.Δmax`, as in the paper). `X` is finite and linearly ordered
 (tie-breaking).
 
 State: see `ANCHORS.md`.

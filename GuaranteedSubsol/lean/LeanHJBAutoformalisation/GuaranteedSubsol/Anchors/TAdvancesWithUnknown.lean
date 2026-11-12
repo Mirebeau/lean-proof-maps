@@ -13,7 +13,7 @@ global operator `Λ` with Dirichlet data `ubd` outside `I = Int X`; `Φ_α` (res
 `kruzkovOp α (Λ · x)` (resp. `kruzkovOp β (Λ · x)`); `v̄ = kruzkov αinv ū`; `α * αinv = 1`;
 `r = α / β`, `C = (1-ρ)^r / (1-σ)`, `t` and `Δ` given by their definitions.
 Author rulings: the monotonicity of `Λ`, the assumptions `v̄ - Φ_α v̄ ≤ 0` and `0 ≤ v̲ - Φ_α v̲`
-of (a), `T⁻ < T⁺` and `0 < ρ` are dropped, being unused (V1 assumes `ρ, σ ∈ ]0,1[`; here
+of (a), `T⁻ < T⁺` and `0 < ρ` are dropped, being unused (the paper assumes `ρ, σ ∈ ]0,1[`; here
 `0 ≤ σ < 1`). Renamed from `t_advances_small_alpha`
 (author ruling, 2026-10-14: `WithUnknown` in place of `small_alpha`; statement unchanged).
 

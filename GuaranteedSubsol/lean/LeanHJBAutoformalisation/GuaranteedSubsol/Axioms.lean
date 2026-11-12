@@ -11,7 +11,7 @@ import Mathlib.Basic.Real.Basic
 Axioms on a discretization scheme, from the Introduction (`Include/Intro.tex`) of the preprint
 GuaranteedSubsolutions.
 
-Following a V0 `\formalizationInstruction` (removed in V1; author's request), the axioms are
+At the author's request, the axioms are
 stated for a *scalar* operator `Λ : (X → ℝ) → ℝ`, which stands for `u ↦ Λ u x` at a fixed
 interior point `x ∈ Int X`. Theorem statements will assume "for all `x ∈ Int X`, `(Λ · x)`
 satisfies ...". On `∂X` the paper's global axioms hold trivially, by the Dirichlet boundary
@@ -96,7 +96,7 @@ def Comparable (C C' : ℝ) (Λ Γ : (X → ℝ) → ℝ) : Prop :=
 
 
 /-- (Comparison principle, Complexity.tex, eq. eq:comparison_Lambda of Prop.
-prop:comparison_Lambda, V1) For the partition `X = I ⊔ Iᶜ`, a sub-solution on `I` lies below a
+prop:comparison_Lambda) For the partition `X = I ⊔ Iᶜ`, a sub-solution on `I` lies below a
 super-solution on `I` as soon as it does on the complement:
 `(u ≤ Λ u and Λ v ≤ v on I, u ≤ v outside I) ⇒ u ≤ v`. The paper's "for any partition" is
 `∀ I, HasComparisonPrinciple I Λ`. Unlike the other axioms, this is a property of the global

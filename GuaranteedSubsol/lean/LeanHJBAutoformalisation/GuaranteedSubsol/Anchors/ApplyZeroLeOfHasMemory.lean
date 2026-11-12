@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.CstSubsolProof
 /-!
 # Frozen statement: an operator with `C_past`-memory is `≤ C_past` on `0`
 
-Source: the remark following Prop. prop:cst_subsol (Intro.tex, V1): `C_past`-memory and additive
+Source: the remark following Prop. prop:cst_subsol (Intro.tex): `C_past`-memory and additive
 invariance together imply `Λ[0] ≤ C_past` (scalar form, at a point of `Int X`).
 
 State: see `ANCHORS.md`.

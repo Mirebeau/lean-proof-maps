@@ -13,7 +13,7 @@ Source: Lemma lem:max_min (Complexity.tex): let `Γ` be causal, `Γ' := max {ū,
 `min {u,T} = min {û,T}`. (The paper's last consequence, `{u < t} = {û < t}` for `t ≤ T`, is
 omitted as trivial; author ruling.) Global operator `Γ : (X → ℝ) → X → ℝ`, causal at every point;
 `Γ'` and `û` are written out explicitly.
-Annotation (author's ruling 2026-10-20): V1 lem:max_min assumes `Γ` monotone and causal and states
+Annotation (author's ruling 2026-10-20): lem:max_min assumes `Γ` monotone and causal and states
 that `û` is the unique fixed point; the anchor proves the fixed-point identity under causality
 only. Uniqueness is not part of the anchor; it follows from `le_of_causal_real`.
 

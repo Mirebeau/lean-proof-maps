@@ -15,7 +15,7 @@ import Mathlib.Algebra.Order.Archimedean.Real.Basic
 
 Provider proofs for the frozen anchors `GuaranteedSubsol.parallelAgsiStep_superSolution`,
 `GuaranteedSubsol.parallelAgsiRun_count_le` and `GuaranteedSubsol.parallelAgsiRun_terminates`
-(Algorithm algo:agsi_parallel and a V0 `\formalizationInstruction`, removed in V1), see
+(Algorithm algo:agsi_parallel), see
 `ANCHORS.md`.
 
 * Invariant: each pass is `v ← Φ_B v`, which preserves super-solutions by

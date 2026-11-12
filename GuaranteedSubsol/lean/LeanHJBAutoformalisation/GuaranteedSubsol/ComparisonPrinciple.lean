@@ -10,8 +10,8 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.CausalExtProof
 /-!
 # Sufficient conditions for the comparison principle
 
-The comparison principle `HasComparisonPrinciple I Λ` (Complexity.tex, eq. eq:comparison_Lambda,
-V1), restated from the proved comparison results:
+The comparison principle `HasComparisonPrinciple I Λ` (Complexity.tex, eq. eq:comparison_Lambda),
+restated from the proved comparison results:
 * Prop. prop:comparison_Lambda: `Λ` monotone on `I` and `Φ_α` `ρ`-sub-additive on `I`;
 * Prop. prop:comp_of_causal: `Λ` monotone and causal on `I`, on `ℝ` and on `ℝ_∞`;
 * on `ℝ_∞`, for the extension `Λ_∞` of a real `Λ`: `Φ_α` `ρ`-sub-additive on `I`

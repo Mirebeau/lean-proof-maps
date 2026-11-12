@@ -8,10 +8,10 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterationProof
 /-!
 # Frozen statement: termination of the global iteration
 
-Source: Lemma lem:cplx_global_iteration (Complexity.tex, V1), for Algorithm
+Source: Lemma lem:cplx_global_iteration (Complexity.tex), for Algorithm
 algo:global_iteration, super-solution version: for `Φ` monotone and `ρ`-sub-additive with
 `0 < ρ < 1`, `η > 0`, and an input with `0 ≤ v - Φ v ≤ C`, the stopping criterion holds after at
-most `⌈ln(C/η) / (-ln ρ)⌉₊` iterations. The hypothesis `0 < ρ` (`ln ρ`) is as in V1.
+most `⌈ln(C/η) / (-ln ρ)⌉₊` iterations. The hypothesis `0 < ρ` (`ln ρ`) is as in the paper.
 
 State: see `ANCHORS.md`.
 -/

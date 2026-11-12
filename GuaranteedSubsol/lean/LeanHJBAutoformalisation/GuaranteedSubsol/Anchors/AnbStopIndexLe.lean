@@ -12,10 +12,10 @@ Source: Corollary corol:max_width (Complexity.tex), first claim, author's reques
 index `anbStopIndex` of the ANB (the first iteration at whose start the stopping test
 `(1 + ε) ū ≥ u̲` holds, `⊤` in `ℕ∞` if it never holds) is at most `⌈n_max⌉₊ + 1`, i.e. the ANB
 terminates after at most `⌈n_max⌉₊` iterations of the paper (the iteration `0` of the Lean version
-is vacuous); `⌈n_max⌉₊` is V1's `n_max`, which has a ceiling. Same hypotheses as
-`anbRun_done_of_maxWidth` (with `Δ_max := 2α ln(2e/ε) + 2τ`, as in V1). `X` is finite and linearly
-ordered (tie-breaking). Constants renamed with Greek letters (`Δmax`, `ΔplusMax`, `εmax`, `NΛ'`,
-`NΛ''`, `NΓ`) and inner-loop pass counts written `passesSub`, `passesSup` (author ruling,
+is vacuous); `⌈n_max⌉₊` is the paper's `n_max`, which has a ceiling. Same hypotheses as
+`anbRun_done_of_maxWidth` (with `Δ_max := 2α ln(2e/ε) + 2τ`, as in the paper). `X` is finite and
+linearly ordered (tie-breaking). Constants renamed with Greek letters (`Δmax`, `ΔplusMax`, `εmax`,
+`NΛ'`, `NΛ''`, `NΓ`) and inner-loop pass counts written `passesSub`, `passesSup` (author ruling,
 2026-10-14; statements equal by definition).
 
 State: see `ANCHORS.md`.

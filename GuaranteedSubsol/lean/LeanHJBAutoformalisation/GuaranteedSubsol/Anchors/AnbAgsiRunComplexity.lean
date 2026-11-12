@@ -12,16 +12,16 @@ Source: Theorem th:complexity_with_agsi (AGSI2.tex), packaged as `anbRun_complex
 request): the statement of Theorem th:complexity holds when lines anb:while_sub and anb:while_sup
 of algo:anb are replaced with parallel AGSI on the band `B_n` (`anbAgsiRun`, the ANB with the inner
 solver `anbAgsi`), with the modified constant `N''_Λ := ⌈2Δ_max/(-α ln ρ)⌉ + ⌊2/(1 - ρ)²⌋`
-(`AnbParams.NΛ''agsi`). As in V1 (author rulings now in the paper): `Δ_max := 2α ln(2e/ε) + 2τ`,
+(`AnbParams.NΛ''agsi`). As in the paper: `Δ_max := 2α ln(2e/ε) + 2τ`,
 `n_max` with a ceiling, `2 Δ_max ≤ min u_bd`, `0 < ρ < 1`, the bound `N_Λ` for each of the two
-counters, and `Δ_max` in `N''_Λ`. Departures from V1: the second term `2/(1 - ρ)²` of `N''_Λ` is
-rounded down since the update counts are integers; the joint "Until" loop of the paper is modelled
-as two separate AGSI runs, for `ū` and for `u̲`, which is equivalent since the two updates do not
-interact. The AGSI bounds the number of updates at each point of the band, not the number of passes
-of the inner loops (a pass may update a single point): the bound on the passes of the inner loops in
-`anbRun_complexity` is replaced with the bound `N''_Λ` on the number of updates at each point in
-each iteration (the counters increase by at most `N''_Λ`). `X` is finite and linearly ordered
-(tie-breaking).
+counters, and `Δ_max` in `N''_Λ`. Departures from the paper: the second term `2/(1 - ρ)²` of
+`N''_Λ` is rounded down since the update counts are integers; the joint "Until" loop of the paper is
+modelled as two separate AGSI runs, for `ū` and for `u̲`, which is equivalent since the two updates
+do not interact. The AGSI bounds the number of updates at each point of the band, not the number of
+passes of the inner loops (a pass may update a single point): the bound on the passes of the inner
+loops in `anbRun_complexity` is replaced with the bound `N''_Λ` on the number of updates at each
+point in each iteration (the counters increase by at most `N''_Λ`). `X` is finite and linearly
+ordered (tie-breaking).
 
 State: see `ANCHORS.md`.
 -/

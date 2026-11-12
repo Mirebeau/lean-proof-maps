@@ -14,7 +14,7 @@ import Mathlib.Tactic.Linarith
 
 The Introduction (`Include/Intro.tex`) of the preprint GuaranteedSubsolutions states the scheme
 axioms for *global* operators `Λ : ℝ^X → ℝ^X`, which satisfy the Dirichlet boundary condition
-`Λ u = u_bd` on `∂X`. Following a V0 `\formalizationInstruction` (removed in V1), the
+`Λ u = u_bd` on `∂X`. At the author's request, the
 formalization (`Axioms.lean`) uses *scalar* (local) forms of the axioms, for the operator
 `u ↦ Λ u x` at a fixed interior point `x ∈ Int X`.
 

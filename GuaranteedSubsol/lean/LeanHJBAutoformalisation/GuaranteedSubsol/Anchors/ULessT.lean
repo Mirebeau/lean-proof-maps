@@ -13,7 +13,7 @@ every point), `ū ∈ ℝ^X`, `T ∈ ℝ`, and `u = max {ū, Γ u}`. Then `ǔ :=
 `ǔ = max {ū, Γ ǔ}^{<T}`; `û := max {ū, min {T, ǔ}}` satisfies `û = max {ū, min {T, Γ û}}`; and
 `ǔ = û^{<T}`. Cutoffs are `cutoffLt` pointwise. Author ruling: the monotonicity of `Γ` is
 dropped, being unused.
-Annotation (author's ruling 2026-10-20): V1 lem:u_less_t states that the three operators are
+Annotation (author's ruling 2026-10-20): lem:u_less_t states that the three operators are
 monotone and causal and have unique fixed points `u`, `ǔ`, `û`; the anchor proves the identities
 `ǔ = u^{<T}`, `û = max {ū, min {T, ǔ}}`, `ǔ = û^{<T}` for a given fixed point `u` of
 `Γ' = max {ū, Γ}`, under causality only. Existence and uniqueness are not part of the anchor; they

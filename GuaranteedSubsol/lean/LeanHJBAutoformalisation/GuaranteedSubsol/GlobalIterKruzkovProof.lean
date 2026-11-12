@@ -11,7 +11,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovRpowProof
 # Global iteration for `Φ_α` when `Φ_β` is `σ`-sub-additive: proofs
 
 Provider proof for the frozen anchor `GuaranteedSubsol.globalIterRun_passes_le_withUnknown`
-(Lemma lem:cplx_global_iteration_withUnknown, V1), see `ANCHORS.md`. With
+(Lemma lem:cplx_global_iteration_withUnknown), see `ANCHORS.md`. With
 `s := β/α ≥ 1`, `v = E_α u` and `w = E_β u` are related by `v = -(-w)^s`, and so are the operators:
 `Φ_α v = -(-Φ_β w)^s` (`conj`). The proof follows the paper:
 1. the order `E_β ū ≤ E_β u̲`, by the comparison principle (for the super-solution version);
@@ -370,7 +370,7 @@ theorem core_passes_le_sup {Y : Type*} {Φ Ψ : (Y → ℝ) → Y → ℝ} {α �
   rw [hDs] at h
   linarith [final_le (C := C) (div_pos hβ hα) hσ0 hσ1 hη]
 
-/-- lem:cplx_global_iteration_withUnknown (V1): the global iteration for `Φ_α` stops within
+/-- lem:cplx_global_iteration_withUnknown: the global iteration for `Φ_α` stops within
 `⌈(ln(C/η) + ln(β/α))/(-ln σ)⌉` passes when `Φ_β` is `σ`-sub-additive (constant of
 lem:pow_cvx). -/
 theorem passes_le [Finite X] {Λ : (X → ℝ) → X → ℝ} (hΛmono : ∀ x, Monotone (Λ · x)) {α β σ : ℝ}

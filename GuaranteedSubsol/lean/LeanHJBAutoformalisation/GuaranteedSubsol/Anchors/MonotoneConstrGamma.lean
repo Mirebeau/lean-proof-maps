@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ConstrGammaProof
 /-!
 # Frozen statement: the constructed underestimating operator is monotone
 
-Source: Prop. prop:constr_Gamma (Intro.tex, V1), monotonicity of `Γ u := Λ[0] + min_V u`
+Source: Prop. prop:constr_Gamma (Intro.tex), monotonicity of `Γ u := Λ[0] + min_V u`
 (eq. eqdef:constr_Gamma, at an interior point; the other properties are `constrGammaLoc`).
 
 State: see `ANCHORS.md`.

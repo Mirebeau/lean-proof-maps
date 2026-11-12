@@ -16,7 +16,7 @@ for a loop that never stops (author ruling, 2026-10-14: pass counts in `ℕ∞`)
 termination of the global iteration (`globalIterSubRun_terminates`, `globalIterRun_terminates`)
 applied on the band (author's request).
 Hypotheses: those of Corollary corol:max_width (see `anbRunData_Δ_lt_Δmax`, with
-`Δ_max := 2α ln(2e/ε) + 2τ`, as in V1), and `ρ > 0` (`ln ρ` appears in `N''_Λ`), as in V1. `X` is
+`Δ_max := 2α ln(2e/ε) + 2τ`), and `ρ > 0` (`ln ρ` appears in `N''_Λ`), as in the paper. `X` is
 finite and linearly ordered (tie-breaking). Constants renamed with Greek letters (`Δmax`,
 `ΔplusMax`, `εmax`, `NΛ'`, `NΛ''`, `NΓ`) and inner-loop pass counts written `passesSub`, `passesSup`
 (author ruling, 2026-10-14; statements equal by definition).

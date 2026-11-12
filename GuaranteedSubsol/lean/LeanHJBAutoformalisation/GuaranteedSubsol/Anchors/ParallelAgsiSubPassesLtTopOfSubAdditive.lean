@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiTermProof
 /-!
 # Frozen statement: the parallel AGSI terminates (sub-solution version)
 
-Source: Prop. prop:cplx_agsi_parallel (AGSI2.tex, V1), termination claim for the sub-solution
+Source: Prop. prop:cplx_agsi_parallel (AGSI2.tex), termination claim for the sub-solution
 variant of Algorithm algo:agsi_parallel: if `Φ` is monotone and `ρ`-sub-additive with
 `0 < ρ < 1`, started from `v` with `0 ≤ Φ v - v ≤ C`, the loop terminates. The bound on the number
 of updates at each point is `parallelAgsiSubRun_count_le_of_subAdditive`.

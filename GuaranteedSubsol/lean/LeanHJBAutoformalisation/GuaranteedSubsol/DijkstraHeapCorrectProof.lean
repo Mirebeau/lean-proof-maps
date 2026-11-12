@@ -10,7 +10,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalCutoffProof
 # Dijkstra's method with a sorted list and a stopping time: correctness
 
 Provider proof for the frozen anchor `GuaranteedSubsol.dijkstraHeapLoop_correct`, see
-`ANCHORS.md` (Prop. prop:Dijkstra_correct, Complexity.tex, V1). The operator `Γ^{<T}`
+`ANCHORS.md` (Prop. prop:Dijkstra_correct, Complexity.tex). The operator `Γ^{<T}`
 (`dijkstraCutOp T Γ`) is monotone and causal when `Γ` is (`monotone_cutOp`, `causal_cutOp`), so
 algo:Dijkstra applied to it reaches a fixed point within `#X` steps, updating each point at most
 once (`DijkstraProof`); the while loop with the sorted list follows it

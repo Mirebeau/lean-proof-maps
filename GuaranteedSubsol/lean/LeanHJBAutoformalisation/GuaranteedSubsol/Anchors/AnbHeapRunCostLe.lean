@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapCostProof
 /-!
 # Frozen statement: complexity of the ANB with sorted lists under uniform bounds
 
-Source: Prop. prop:complexity_lazy (Complexity.tex, V1), eq. eq:anb_cost, from uniform bounds
+Source: Prop. prop:complexity_lazy (Complexity.tex), eq. eq:anb_cost, from uniform bounds
 (author's request; the instances for Theorems th:complexity, th:complexity_withUnknown and
 th:complexity_with_agsi are in `AnbHeapComplexity.lean`). For algo:anb_lazy with sorted lists and
 any inner solver `S`: if `countB' ≤ N_Γ` (selections by Dijkstra's method, `anbHeapCountB'`),

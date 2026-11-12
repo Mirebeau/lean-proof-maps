@@ -16,7 +16,7 @@ the whole run of the ANB, the counters `countSub` and `countSup` of the updates
 The counters take values in `ℕ∞` (`⊤` if an inner loop involving the point never stops; author
 ruling, 2026-10-14), so that the bound also expresses termination.
 Hypotheses: those of Corollary corol:max_width (see `anbRunData_Δ_lt_Δmax`, with
-`Δ_max := 2α ln(2e/ε) + 2τ`, as in V1), the `C_past`-memory of `Λ` on `Int X`,
+`Δ_max := 2α ln(2e/ε) + 2τ`, as in the paper), the `C_past`-memory of `Λ` on `Int X`,
 `C_past ≥ 0`, `C'_Γ ≥ 0`, and `ρ > 0` (as in Prop. prop:niter_while). `X` is finite and linearly
 ordered (tie-breaking). Constants renamed with Greek letters (`Δmax`, `ΔplusMax`, `εmax`, `NΛ'`,
 `NΛ''`, `NΓ`) and inner-loop pass counts written `passesSub`, `passesSup` (author ruling,

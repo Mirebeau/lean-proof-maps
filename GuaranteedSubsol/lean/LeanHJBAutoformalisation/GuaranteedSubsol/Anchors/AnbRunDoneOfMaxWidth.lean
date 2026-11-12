@@ -9,11 +9,10 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AnbMaxWidthProof
 # Frozen statement: the number of iterations of the ANB is bounded
 
 Source: Corollary corol:max_width (Complexity.tex), first claim: the ANB terminates within
-`n_max := ⌈(‖u_*‖_∞ + Δ_max) / τ⌉` iterations (V1; `AnbParams.nMax` is the quantity inside the
+`n_max := ⌈(‖u_*‖_∞ + Δ_max) / τ⌉` iterations (`AnbParams.nMax` is the quantity inside the
 ceiling). In the Lean version, the stopping test holds at the start of iteration `⌈nMax⌉₊ + 1`
 (iterations are numbered from `0`, and the iteration `0` is vacuous, Remark rem:anb_npos), i.e. at
-most `⌈nMax⌉₊ = n_max` iterations of the paper are performed, as in V1 (V0 stated the bound
-without the ceiling, which may be exceeded by one).
+most `⌈nMax⌉₊ = n_max` iterations of the paper are performed, as in the paper.
 Hypotheses: the parts of Assumption assum:all used by the proof, in the form of
 `subsol_growth` (`Λ` and `Γ` have the Dirichlet data `ubd` outside `I = Int X`; `Λ` monotone and
 additively invariant on `Int X`; `Γ` monotone, causal, additively invariant on `Int X`, `Γ ≤ Λ`,
@@ -22,8 +21,7 @@ with `α > 0`, `0 ≤ ρ < 1` (the parameters `α`, `ρ` of algo:anb); a fixed p
 `Λ`; `τ > 0`, `0 < ε ≤ ε_max` (`AnbParams.εmax`) and `2 Δ_max ≤ min u_bd`. The memory property
 and the finite super-solution of assum:all are not used, hence omitted; `Λ[0] ≥ 0` and the
 comparison principle are derived from sub-additivity. `Δ_max := 2α ln(2e/ε) + 2τ`
-(`AnbParams.Δmax`), as in V1 (author ruling; V0 had `2α ln(2e/ε) + τ`, for which the final step
-of the proof fails). `X` is finite and linearly ordered (tie-breaking).
+(`AnbParams.Δmax`), as in the paper. `X` is finite and linearly ordered (tie-breaking).
 Constants renamed with Greek letters (`Δmax`, `ΔplusMax`, `εmax`, `NΛ'`, `NΛ''`, `NΓ`) and
 inner-loop pass counts written `passesSub`, `passesSup` (author ruling, 2026-10-14; statements
 equal by definition).

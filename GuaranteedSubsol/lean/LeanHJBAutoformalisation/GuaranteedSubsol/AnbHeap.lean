@@ -9,7 +9,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeap
 /-!
 # The ANB with sorted lists (algo:anb_lazy)
 
-Algorithm algo:anb_lazy (Complexity.tex, V1), with the sorted lists stored in ordered partial maps
+Algorithm algo:anb_lazy (Complexity.tex), with the sorted lists stored in ordered partial maps
 (`OrderedPartialMap`, a model of `std::set`). As in `AnbLazy`, the placeholder `⋄` of `ũ` is
 `none` (`ũ` takes values in `Option ℝ`, author's ruling) and stands for `(n-1)τ`
 (`ū = ũ^{⋄→(n-1)τ}`, `AnbHeapState.uSub`). The lists are:
@@ -18,7 +18,7 @@ Algorithm algo:anb_lazy (Complexity.tex, V1), with the sorted lists stored in or
 * `M`: the keys `ũ(x)` of the points where `ũ(x) ≠ ⋄` and `(1 + ε) ũ(x) < u̲~(x)`
   (eq. eqdef:M_heap);
 * `S`: the keys `ũ(x)` of the points where `ũ(x) ≠ ⋄` (eq. eqdef:S_heap);
-* `Sc` (eq. eqdef:Sc_heap; author's addition, now in V1): the keys `u̲~(x)`, in reverse order, of
+* `Sc` (eq. eqdef:Sc_heap): the keys `u̲~(x)`, in reverse order, of
   the points where `ũ(x) = ⋄`, so that `bot` gives the largest of them. It makes the stopping test
   exactly that of algo:anb.
 
@@ -26,8 +26,8 @@ In iteration `n`, with `T = nτ`:
 * line anb_lazy:Dijkstra: Dijkstra's method with the list `L`, for the operator `max {ū, Γ_∞}`
   and the stopping time `T` (`dijkstraHeapLoop`);
 * line anb_lazy:olu_gets_hatu: for the points of `B_{n-1}`, the points selected by Dijkstra's
-  method, and the points of `S` with key in `[(n-1)τ, T[` (as in V1; author's ruling, a fix of
-  V0), `ũ(x) := ⋄` if `ǔ(x) = ∞` and `ū(x) < T` (as in V1: the placeholder is set exactly when
+  method, and the points of `S` with key in `[(n-1)τ, T[` (as in the paper),
+  `ũ(x) := ⋄` if `ǔ(x) = ∞` and `ū(x) < T` (as in the paper: the placeholder is set exactly when
   `T` is selected in `min {T, ǔ(x)}`), and `ũ(x) := max {ū(x), min {T, ǔ(x)}}` otherwise; update
   of `M`, `S`, `Sc`;
 * line anb_lazy:tn: `t_n := min {T, smallest key of M}`; `Δ_n := T - t_n`;

@@ -11,7 +11,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.SubaddConcaveProof
 Source: Prop. prop:subadd_alpha_beta (Subadd.tex), scalar form: if `Λ` is monotone and
 `1`-sub-additive and `Φ_α` is `ρ`-sub-additive, with `α > 0` and `ρ ≥ 0`, then `Φ_β` is
 `σ`-sub-additive for every `β ≥ α` and `σ ≥ (1 - α/β) + ρ α/β`, without restrictions `ρ < 1`,
-`σ < 1`, as in V1 (author ruling). `X` is finite (standing assumption).
+`σ < 1`, as in the paper (author ruling). `X` is finite (standing assumption).
 
 State: see `ANCHORS.md`.
 -/

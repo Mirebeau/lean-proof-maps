@@ -8,16 +8,17 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AnbWithUnknownProof
 /-!
 # Frozen statement: complexity of the ANB with unknown constants (th:complexity_withUnknown)
 
-Source: Theorem th:complexity_withUnknown (Intro.tex, V1), packaged as `anbRun_complexity`
+Source: Theorem th:complexity_withUnknown (Intro.tex), packaged as `anbRun_complexity`
 (author's request): the conclusions of Theorem th:complexity hold when `Φ_β` (rather than `Φ_α`)
 is `σ`-sub-additive, for unknown constants `β`, `σ` (`AnbParams.WithUnknown`; the algorithm only
 uses `q.p`), with the modified constants `Δ_max := 2β ln(2eC/ε) + 2τ`,
 `C := (1 - ρ)^(α/β)/(1 - σ)`, `N''_Λ := ⌈(2Δ_max/α + ln(β/α) - ln(1 - ρ))/(-ln σ)⌉` (the
-sharper V1 constant of Prop. prop:niter_while_withUnknown, author's ruling 2026-10-16), and
+constant of Prop. prop:niter_while_withUnknown), and
 `n_max`, `ε_max`, `Δ⁺_max`, `N'_Λ`, `N_Γ` built from this `Δ_max`
-(`AnbParams.WithUnknown.*`). As in V1: `n_max` with a ceiling; the bound `N_Λ` for each of the
-two counters. Departure from V1 (author ruling): `ρ > 0` is not assumed (unlike
-`anbRun_complexity`; V1 assumes `ρ ∈ ]0,1[`). `X` is finite and linearly ordered (tie-breaking).
+(`AnbParams.WithUnknown.*`). As in the paper: `n_max` with a ceiling; the bound `N_Λ` for each of
+the two counters. Departure from the paper (author ruling): `ρ > 0` is not assumed (unlike
+`anbRun_complexity`; the paper assumes `ρ ∈ ]0,1[`). `X` is finite and linearly ordered
+(tie-breaking).
 
 State: see `ANCHORS.md`.
 -/

@@ -12,8 +12,7 @@ Source: Algorithm algo:agsik (AGSI2.tex), line agsik:until, and the displayed re
 paragraph before the algorithm (with the convention `ln t = -∞` for `t ≤ 0`), at a point with
 `u = b` and `Λ u = a` real, level `n`, timescale `α > 0`: the criterion
 `exp(-a/α) < exp((ε-b)/α) + 2^{-n}` holds iff `a ≥ n α ln 2` or
-`b < a + ε - α ln(1 - exp((a - n α ln 2)/α))`, with a strict second inequality as in V1 (V0 had
-`≤` there).
+`b < a + ε - α ln(1 - exp((a - n α ln 2)/α))`, with a strict second inequality as in the paper.
 
 State: see `ANCHORS.md`.
 -/

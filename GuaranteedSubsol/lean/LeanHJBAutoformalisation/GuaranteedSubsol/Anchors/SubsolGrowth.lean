@@ -12,7 +12,7 @@ Source: Prop. prop:olu_ge_ustar (Complexity.tex). Global operators `Λ, Γ : (X 
 the same Dirichlet data `ubd` outside `I = Int X` (the "implicit additional assumption" of the
 paper's proof). `Λ` is monotone, additively invariant, has `C_past`-memory and is
 `C_Γ, C'_Γ`-comparable with `Γ` on `Int X`. The comparison principle is assumed in the form of
-V1 eq:comparison_Lambda (`hcomp`: sub-solution vs. super-solution, on any partition `J ⊔ Jᶜ`). The
+eq:comparison_Lambda (`hcomp`: sub-solution vs. super-solution, on any partition `J ⊔ Jᶜ`). The
 paper's `u_*` is only a sub-solution, named `uSub`. The assumption `Γ ≤ Λ` is not used, hence
 omitted. Conclusion: `u ≥ t + (u_* - (1+ε) t - C_past - C'_Γ) / C_Γ` on `{u ≥ t}`.
 

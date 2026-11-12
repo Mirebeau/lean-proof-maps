@@ -8,12 +8,11 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AgsikKruzkov
 /-!
 # Frozen statement: termination of the AGSIK for the extension of a real scheme
 
-Source: Algorithm algo:agsik (AGSI2.tex); the termination claim is from a V0
-`\formalizationInstruction`, removed in V1. Stated for the extension `Λ_∞` of a real operator `Λ`
-(author's request): if `Λ` is monotone, its Kruzkov transform `Φ_β` is `ρ`-sub-additive with `β > 0`
-and `ρ < 1`, and `Λ` admits a finite sub-solution `w`, then the AGSIK applied to `Λ_∞` (timescale
-`α = 1/αinv > 0`, unrelated to `β`, tolerance `ε > 0`) reaches its stopping criterion after finitely
-many steps. No causality is assumed. `X` is finite.
+Source: Algorithm algo:agsik (AGSI2.tex); termination claim. Stated for the extension
+`Λ_∞` of a real operator `Λ` (author's request): if `Λ` is monotone, its Kruzkov transform `Φ_β` is
+`ρ`-sub-additive with `β > 0` and `ρ < 1`, and `Λ` admits a finite sub-solution `w`, then the AGSIK
+applied to `Λ_∞` (timescale `α = 1/αinv > 0`, unrelated to `β`, tolerance `ε > 0`) reaches its
+stopping criterion after finitely many steps. No causality is assumed. `X` is finite.
 
 State: see `ANCHORS.md`.
 -/

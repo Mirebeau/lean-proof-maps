@@ -23,7 +23,7 @@ Provider proof for the frozen anchor `GuaranteedSubsol.subAdditive_of_kruzkov_lo
 * Extension to all `v`: `Φ (v + t)` is approximated from below by `E_α (Λ w)` for finite
   minorants `w` of `E_α⁻¹ (v + t)`, and `E_α w - t ∈ N` lies below `v`.
 
-As in V1, only the continuity of `Λ` is assumed (V0 assumed it locally Lipschitz).
+As in the paper, only the continuity of `Λ` is assumed.
 -/
 
 namespace GuaranteedSubsol.SubaddLocalBwdProof

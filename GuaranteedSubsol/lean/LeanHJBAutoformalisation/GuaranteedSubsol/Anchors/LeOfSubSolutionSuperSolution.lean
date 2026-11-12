@@ -9,7 +9,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
 # Frozen statement: comparison of a sub-solution with a super-solution
 
 Source: Prop. prop:comparison_Lambda (Complexity.tex), eq. eq:comparison_Lambda, in the sub- vs.
-super-solution form of V1 (author ruling; the V0 form was false): if `Λ` is
+super-solution form of the paper: if `Λ` is
 monotone and `Φ_α` is `ρ`-sub-additive with `α > 0`, `ρ < 1`, then for any partition
 `X = Int Y ⊔ ∂Y`, `(u ≤ Λ u and Λ v ≤ v on Int Y, u ≤ v on ∂Y) ⇒ u ≤ v`.
 

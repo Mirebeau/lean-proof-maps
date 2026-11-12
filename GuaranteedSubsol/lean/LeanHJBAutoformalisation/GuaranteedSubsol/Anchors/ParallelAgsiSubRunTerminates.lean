@@ -8,8 +8,8 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiSubProof
 /-!
 # Frozen statement: termination of the sub-solution variant of the parallel AGSI
 
-Source: Algorithm algo:agsi_parallel (AGSI2.tex), sub-solution variant, and a V0
-`\formalizationInstruction`, removed in V1 (author's request): under the assumptions of
+Source: Algorithm algo:agsi_parallel (AGSI2.tex), sub-solution variant (author's
+request): under the assumptions of
 `parallelAgsiSubRun_count_le`, the stopping criterion `Φ v - v ≤ η` holds after `n` passes,
 with `n ≤ ⌈∑_X (w - v) / η⌉₊`.
 

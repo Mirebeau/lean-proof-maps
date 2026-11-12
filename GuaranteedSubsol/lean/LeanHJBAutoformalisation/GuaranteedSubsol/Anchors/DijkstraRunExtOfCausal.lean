@@ -12,7 +12,7 @@ Source: Prop. prop:Dijkstra_correct (Complexity.tex), for the extension
 `Γ_∞ = Global.monotoneExtension Γ` of a real operator `Γ` that is monotone and causal at each point
 (author's request): if `Γ_∞ u₀ ≤ u₀`, then each point is updated at most once, the updated points
 are those whose value has decreased, and the algorithm reaches a fixed point of `Γ_∞` within
-`card X` iterations. `X` is finite and linearly ordered (tie-breaking). V1 prop:Dijkstra_correct
+`card X` iterations. `X` is finite and linearly ordered (tie-breaking). prop:Dijkstra_correct
 adds a stopping time `T`; these statements are the case `T = ∞`, and imply the general case applied
 to `Γ^{<T}` (`dijkstraCutOp`).
 

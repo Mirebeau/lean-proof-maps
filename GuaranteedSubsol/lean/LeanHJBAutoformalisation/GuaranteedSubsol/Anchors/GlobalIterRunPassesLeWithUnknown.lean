@@ -6,15 +6,14 @@ Authors: Jean-Marie Mirebeau
 import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterKruzkovProof
 
 /-!
-# Frozen statement: the global iteration for `Φ_α` stops when `Φ_β` is `σ`-sub-additive (V1)
+# Frozen statement: the global iteration for `Φ_α` stops when `Φ_β` is `σ`-sub-additive
 
-Source: Lemma lem:cplx_global_iteration_withUnknown (Complexity.tex, V1): if `Λ` is monotone and
+Source: Lemma lem:cplx_global_iteration_withUnknown (Complexity.tex): if `Λ` is monotone and
 `Φ_β` is `σ`-sub-additive, with `0 < α ≤ β` and `0 < σ < 1`, then the global iteration
 (algo:global_iteration) for `Φ_α`, started from `E_α ū` (sub-solution variant) or from `E_α u̲`
 (super-solution version), stops within `⌈(ln(C/η) + ln(β/α))/(-ln σ)⌉` passes, where `ū ≤ Λ ū`,
-`Λ u̲ ≤ u̲` (`u̲` with values in `ℝ_∞`, `Λ_∞` its extension) and `E_α ū ≥ -C`. It replaces the
-anchor `globalIterRun_passes_le_of_kruzkov`, which stated the weaker V0 bound
-`⌈(ln(C/η) + (β/α) ln 2)/(-ln σ)⌉` (author's ruling 2026-10-16); the proof uses lem:pow_cvx.
+`Λ u̲ ≤ u̲` (`u̲` with values in `ℝ_∞`, `Λ_∞` its extension) and `E_α ū ≥ -C`. The
+proof uses lem:pow_cvx.
 The numbers of passes are in `ℕ∞` (`⊤` if a loop never stops), so the bound
 expresses termination. The order `ū ≤ u̲`, used for the super-solution version, follows from the
 comparison principle; the paper's `C ≥ 0` is not needed (`C` only enters through `max(C, 0)`).

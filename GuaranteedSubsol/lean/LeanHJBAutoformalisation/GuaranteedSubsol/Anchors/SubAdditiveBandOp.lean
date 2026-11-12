@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.BandProof
 /-!
 # Frozen statement: the operator on a band, with frozen exterior values, is sub-additive
 
-Source: Lemma lem:monDom (Complexity.tex, V1), second claim: if `Λ` is monotone and
+Source: Lemma lem:monDom (Complexity.tex), second claim: if `Λ` is monotone and
 `ρ`-sub-additive, so is `Λ_B^v` (`bandOp Λ B v`; scalar form at each point of `B`).
 
 State: see `ANCHORS.md`.

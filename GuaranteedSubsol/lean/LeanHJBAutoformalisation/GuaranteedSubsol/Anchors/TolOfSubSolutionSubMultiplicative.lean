@@ -9,7 +9,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.TolProof
 # Frozen statement: tolerance from a sub-solution, sub-multiplicative case
 
 Source: Corol. corol:tol (Complexity.tex), second point, sub-solution case. `Λ` obeys the comparison
-principle (sub-solution vs. super-solution form of V1 eq:comparison_Lambda, `hcomp`), has a fixed
+principle (sub-solution vs. super-solution form of eq:comparison_Lambda, `hcomp`), has a fixed
 point `u_*`, Dirichlet boundary conditions `ubd ≥ 0` on `∂X` (complement of `I = Int X`), and is
 `ν`-sub-multiplicative on `Int X`. If `0 ≤ Λ ū - ū ≤ ε` with `0 ≤ ε < ν`, and `ū = ubd` on `∂X`,
 then `(1 - ε/ν) u_* ≤ ū ≤ u_*`.

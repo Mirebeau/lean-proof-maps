@@ -8,11 +8,10 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AnbWithUnknownProof
 /-!
 # Frozen statement: the inner loops of the ANB stop after at most `N''_Λ` passes, unknown parameters
 
-Source: Prop. prop:niter_while_withUnknown (Complexity.tex, V1): in each iteration of the ANB,
+Source: Prop. prop:niter_while_withUnknown (Complexity.tex): in each iteration of the ANB,
 the inner loops of lines anb:while_sub and anb:while_sup (global iterations on the band `B_n`)
 perform at most `N''_Λ := ⌈(2Δ_max/α + ln(β/α) - ln(1 - ρ))/(-ln σ)⌉` passes
-(`AnbParams.WithUnknown.NΛ''`; the V0 constant `⌈((2Δ_max + β ln 2)/α - ln(1 - ρ))/(-ln σ)⌉` is
-replaced by the sharper V1 constant, author's ruling 2026-10-16); in particular they stop (the
+(`AnbParams.WithUnknown.NΛ''`); in particular they stop (the
 number of passes is `⊤` in `ℕ∞` for a loop that never stops).
 Hypotheses: those of Corollary corol:max_width_withUnknown: the parts of assum:all used
 (memory and finite super-solution unused, omitted), `Φ_β` `σ`-sub-additive on `Int X` with

@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.CstSubsolProof
 /-!
 # Frozen statement: constants below the boundary data are sub-solutions (`Γ ≤ Λ` case)
 
-Source: Prop. prop:cst_subsol (Intro.tex, V1), eq. eq:cst_subsol, second case: if `Γ[0] ≥ 0` and
+Source: Prop. prop:cst_subsol (Intro.tex), eq. eq:cst_subsol, second case: if `Γ[0] ≥ 0` and
 `Γ ≤ Λ`, then `t ≤ Λ[t]` and `t ≤ Γ[t]` for all `t ≤ min u_bd`. `Γ` is additively invariant on
 `Int X = I` and equal to `u_bd` on `∂X` (the additive invariance of `Λ` is not used).
 

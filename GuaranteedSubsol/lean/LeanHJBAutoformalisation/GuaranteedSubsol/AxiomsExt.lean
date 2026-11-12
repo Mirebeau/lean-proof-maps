@@ -80,7 +80,7 @@ def Comparable (C C' : ℝ) (Λ Γ : (X → WithTop ℝ) → WithTop ℝ) : Prop
       Λ (fun y => (C : WithTop ℝ) * u y) ≤ (C : WithTop ℝ) * Γ u
 
 
-/-- (Comparison principle on `ℝ_∞`, Complexity.tex eq. eq:comparison_Lambda, V1)
+/-- (Comparison principle on `ℝ_∞`, Complexity.tex eq. eq:comparison_Lambda)
 For the partition `X = I ⊔ Iᶜ`: `(u ≤ Λ u and Λ v ≤ v on I, u ≤ v outside I) ⇒ u ≤ v`, for the
 global operator `Λ : (X → ℝ_∞) → X → ℝ_∞`. -/
 def HasComparisonPrinciple (I : Set X) (Λ : (X → WithTop ℝ) → X → WithTop ℝ) : Prop :=

@@ -8,8 +8,8 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.CausalFixedPointProof
 /-!
 # Frozen statement: fixed point of a monotone causal operator with a super-solution
 
-Source: Prop. prop:comp_of_causal (Complexity.tex, V1), last claims (author's request, now stated
-in V1): Dijkstra's method started from a super-solution computes the unique fixed point
+Source: Prop. prop:comp_of_causal (Complexity.tex), last claims (author's request):
+Dijkstra's method started from a super-solution computes the unique fixed point
 (Prop. prop:Dijkstra_correct), by the comparison principle for causal operators with `Int Y = X`:
 if `Γ` is monotone and
 causal (at every point) and `Γ w ≤ w` for some finite `w`, then `Γ` has a fixed point `u` which

@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.PowCvxProof
 /-!
 # Frozen statement: the tangent inequality for `t ↦ t^s`
 
-Source: Lemma lem:pow_cvx (Complexity.tex, V1): for `0 ≤ a ≤ b` and `s ≥ 1`,
+Source: Lemma lem:pow_cvx (Complexity.tex): for `0 ≤ a ≤ b` and `s ≥ 1`,
 `b^s ≤ a^s + s b^{s-1} (b - a)` (real powers, `Real.rpow`).
 
 State: see `ANCHORS.md`.

@@ -12,7 +12,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiResultProof
 
 Provider proofs for the frozen anchors `GuaranteedSubsol.parallelAgsiPasses_lt_top_of_subAdditive`
 and `…parallelAgsiSubPasses_lt_top_of_subAdditive`, see `ANCHORS.md`: under the assumptions of
-Prop. prop:cplx_agsi_parallel (AGSI2.tex, V1), the number of updates at each point is bounded
+Prop. prop:cplx_agsi_parallel (AGSI2.tex), the number of updates at each point is bounded
 uniformly along the loop (`ParallelAgsiCplxProof.count_le_of_subAdditive`), hence the loop stops
 (`ParallelAgsiResultProof.passes_lt_top_of_count_le`).
 -/

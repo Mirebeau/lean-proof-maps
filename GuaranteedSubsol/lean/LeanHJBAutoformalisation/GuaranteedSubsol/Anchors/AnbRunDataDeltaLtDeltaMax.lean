@@ -18,8 +18,7 @@ with `α > 0`, `0 ≤ ρ < 1` (the parameters `α`, `ρ` of algo:anb); a fixed p
 `Λ`; `τ > 0`, `0 < ε ≤ ε_max` (`AnbParams.εmax`) and `2 Δ_max ≤ min u_bd`. The memory property
 and the finite super-solution of assum:all are not used, hence omitted; `Λ[0] ≥ 0` and the
 comparison principle are derived from sub-additivity. `Δ_max := 2α ln(2e/ε) + 2τ`
-(`AnbParams.Δmax`), as in V1 (author ruling; V0 had `2α ln(2e/ε) + τ`, for which the final step
-of the proof fails). `X` is finite and linearly ordered (tie-breaking).
+(`AnbParams.Δmax`), as in the paper. `X` is finite and linearly ordered (tie-breaking).
 Constants renamed with Greek letters (`Δmax`, `ΔplusMax`, `εmax`, `NΛ'`, `NΛ''`, `NΓ`) and
 inner-loop pass counts written `passesSub`, `passesSup` (author ruling, 2026-10-14; statements
 equal by definition).

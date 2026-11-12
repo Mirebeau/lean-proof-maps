@@ -13,9 +13,9 @@ import Mathlib.Logic.Function.Basic
 Algorithm algo:Dijkstra (Complexity.tex), modelled as a step function on a state. The map `u` and
 the operator `Γ` take values in `ℝ_∞ = WithTop ℝ`. The list `L` is not stored: by
 Prop. prop:Dijkstra_correct (eq. eq:Dijkstra_prop) it equals `{(Γ u x, x) | Γ u x < u x}` at each
-iteration. As in V1, ties are broken by a linear order on `X`: the selected pair `(t, x)` is
+iteration. As in the paper, ties are broken by a linear order on `X`: the selected pair `(t, x)` is
 minimal for the lexicographic order. The state also records the number of Dijkstra updates at
-each point. The model has no stopping time (the case `T = ∞` of algo:Dijkstra, V1); the stopping
+each point. The model has no stopping time (the case `T = ∞` of algo:Dijkstra); the stopping
 time `T` corresponds to running it on `Γ^{<T}` (`dijkstraCutOp`, `DijkstraHeap.lean`), as in the
 proof of Prop. prop:Dijkstra_correct.
 -/

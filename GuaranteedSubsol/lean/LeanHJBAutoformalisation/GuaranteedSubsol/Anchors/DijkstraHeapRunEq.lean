@@ -11,7 +11,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapProof
 Source: algo:Dijkstra (Complexity.tex) with the sorted list `L` (its invariant is eq.
 eq:Dijkstra_prop, right) stored in an ordered partial map (Papers/OrderedPartialMap, author's
 request; `dijkstraHeapRun`), with the stencils `𝒱` of eq. eqdef:stencil and the stopping time `T`
-of algo:Dijkstra (V1: the method stops when the smallest key is `≥ T`, as needed in the ANB).
+of algo:Dijkstra (the method stops when the smallest key is `≥ T`, as needed in the ANB).
 Starting from any state whose list holds the keys of the active points (`L.v = dijkstraKey Γ u`, as
 in the ANB where `L` is given), after `n` iterations: the map `u` and the acceptance counts coincide
 with those of algo:Dijkstra without stopping time (`dijkstraRun`) applied to `Γ^{<T}`

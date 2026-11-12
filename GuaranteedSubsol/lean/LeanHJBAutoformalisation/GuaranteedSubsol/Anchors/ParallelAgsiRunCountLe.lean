@@ -8,8 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiProof
 /-!
 # Frozen statement: bound on the total number of updates of the parallel AGSI
 
-Source: Algorithm algo:agsi_parallel (AGSI2.tex) and a V0 `\formalizationInstruction` below it,
-removed in V1 (author's request): if `Φ` is
+Source: Algorithm algo:agsi_parallel (AGSI2.tex) (author's request): if `Φ` is
 monotone, satisfies the comparison principle and admits a sub-solution `w`, and `v` is a
 super-solution, then `v` stays above `w`, while `∑_X v` decreases by more than `η` at each update
 `v(x) ← Φ v(x)`. Hence `η` times the total number of updates is at most `∑_X (v - w)`.

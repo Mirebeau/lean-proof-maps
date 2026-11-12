@@ -8,8 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiProof
 /-!
 # Frozen statement: termination of the parallel AGSI
 
-Source: Algorithm algo:agsi_parallel (AGSI2.tex) and a V0 `\formalizationInstruction` below it,
-removed in V1 (author's request): under the
+Source: Algorithm algo:agsi_parallel (AGSI2.tex) (author's request): under the
 assumptions of `parallelAgsiRun_count_le`, the while loop terminates, i.e. the stopping criterion
 `v - Φ v ≤ η` holds after `n` passes, with the explicit bound `n ≤ ⌈∑_X (v - w) / η⌉₊`.
 

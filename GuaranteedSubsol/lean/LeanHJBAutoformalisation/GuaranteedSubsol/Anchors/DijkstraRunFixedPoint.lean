@@ -10,7 +10,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
 
 Source: Prop. prop:Dijkstra_correct (Complexity.tex): the algorithm terminates (`L_N = ∅`), here
 within `N ≤ card X` iterations, and `u_* := u_N` is a fixed point of `Γ`. `X` is finite and
-linearly ordered (tie-breaking). V1 prop:Dijkstra_correct adds a stopping time `T`; these statements
+linearly ordered (tie-breaking). prop:Dijkstra_correct adds a stopping time `T`; these statements
 are the case `T = ∞`, and imply the general case applied to `Γ^{<T}` (`dijkstraCutOp`).
 
 State: see `ANCHORS.md`.

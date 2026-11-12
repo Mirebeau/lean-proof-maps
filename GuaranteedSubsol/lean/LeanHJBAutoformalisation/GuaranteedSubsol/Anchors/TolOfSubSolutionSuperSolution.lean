@@ -9,7 +9,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.TolProof
 # Frozen statement: tolerance from a sub- and a super-solution
 
 Source: Corol. corol:tol (Complexity.tex), first point. `Λ` is monotone, obeys the comparison
-principle (in the sub-solution vs. super-solution form of V1 eq:comparison_Lambda, `hcomp`),
+principle (in the sub-solution vs. super-solution form of eq:comparison_Lambda, `hcomp`),
 and has a fixed point `u_*`. If `ū ≤ Λ ū`, `Λ u̲ ≤ u̲` and `(1 + ε) ū ≥ u̲` with `ε ≥ 0`, then
 `(1+ε)⁻¹ u_* ≤ ū ≤ u_*`, `u_* ≤ u̲ ≤ (1+ε) u_*`, `0 ≤ Λ ū - ū ≤ ε u_*`, `0 ≤ u̲ - Λ u̲ ≤ ε u_*`.
 

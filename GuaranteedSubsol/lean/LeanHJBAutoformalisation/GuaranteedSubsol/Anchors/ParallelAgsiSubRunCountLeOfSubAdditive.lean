@@ -10,8 +10,8 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiSubProof
 
 Source: Prop. prop:cplx_agsi_parallel (AGSI2.tex), sub-solution variant: if `Φ` is monotone and
 `ρ`-sub-additive with `0 < ρ < 1`, and the input satisfies `0 ≤ Φ v - v ≤ C`, then at most
-`N''_Φ := ⌈ln((1 - ρ) C/η) / (-ln ρ)⌉₊ + 2/(1 - ρ)²` updates occur at any given point. As in V1,
-`0 < ρ`. `X` is finite.
+`N''_Φ := ⌈ln((1 - ρ) C/η) / (-ln ρ)⌉₊ + 2/(1 - ρ)²` updates occur at any given point. As in the
+paper, `0 < ρ`. `X` is finite.
 
 State: see `ANCHORS.md`.
 -/

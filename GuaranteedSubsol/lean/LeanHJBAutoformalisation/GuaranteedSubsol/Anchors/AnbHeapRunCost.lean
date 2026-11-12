@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapCostProof
 /-!
 # Frozen statement: cost accounting of the ANB with sorted lists
 
-Source: Prop. prop:complexity_lazy (Complexity.tex, V1), generic part (author's request), for
+Source: Prop. prop:complexity_lazy (Complexity.tex), generic part (author's request), for
 algo:anb_lazy with sorted lists (`anbHeapRunWith`, `AnbHeap.lean`) and any inner solver `S`. After
 `K` iterations, with `N := #X`, `𝒱̃` the reversed stencils, `countB'(x)` the number of selections of
 `x` in line anb_lazy:Dijkstra (line Dijkstra:accept; updates by Dijkstra's method, which only occur

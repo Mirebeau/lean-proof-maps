@@ -8,7 +8,7 @@ import Mathlib.Analysis.Convex.SpecificFunctions.Basic
 /-!
 # Lemma lem:pow_cvx: proof
 
-Lemma lem:pow_cvx (Complexity.tex, V1): for `0 ≤ a ≤ b` and `s ≥ 1`,
+Lemma lem:pow_cvx (Complexity.tex): for `0 ≤ a ≤ b` and `s ≥ 1`,
 `b^s ≤ a^s + s b^{s-1} (b - a)`, the tangent inequality of the convex function `t ↦ t^s` at `b`.
 The proof uses Bernoulli's inequality `1 + s x ≤ (1 + x)^s` (`x ≥ -1`) with `x = a/b - 1`.
 -/

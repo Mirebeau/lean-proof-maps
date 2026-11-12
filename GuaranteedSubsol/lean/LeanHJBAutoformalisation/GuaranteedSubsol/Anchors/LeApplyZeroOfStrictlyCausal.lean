@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.CstSubsolProof
 /-!
 # Frozen statement: a `δ`-strictly causal operator is `≥ δ` on `0`
 
-Source: Prop. prop:cst_subsol (Intro.tex, V1), item enum:Lambda0_delta, strictly causal case: if
+Source: Prop. prop:cst_subsol (Intro.tex), item enum:Lambda0_delta, strictly causal case: if
 `Γ` is `δ`-strictly causal (and additively invariant), then `Γ[0] ≥ δ` (scalar form, at a point of
 `Int X`; no sign condition on `δ` is needed).
 

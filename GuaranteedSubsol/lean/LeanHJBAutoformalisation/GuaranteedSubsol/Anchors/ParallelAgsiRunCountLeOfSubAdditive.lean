@@ -12,8 +12,8 @@ Source: Prop. prop:cplx_agsi_parallel (AGSI2.tex), super-solution case: if `Φ` 
 `ρ`-sub-additive with `ρ < 1`, and the input satisfies `0 ≤ v - Φ v ≤ C`, then the parallel
 AGSI with tolerance `η > 0` performs at most
 `N''_Φ := ⌈ln((1 - ρ) C/η) / (-ln ρ)⌉₊ + 2/(1 - ρ)²` updates `v(x) ← Φ v(x)` at any given point
-`x`, whatever the number `n` of passes. The hypothesis `0 < ρ` (`ln ρ`) is as in V1. It loses no
-generality, since a `0`-sub-additive `Φ` is `ρ`-sub-additive for any `ρ > 0`. `X` is finite
+`x`, whatever the number `n` of passes. The hypothesis `0 < ρ` (`ln ρ`) is as in the paper. It loses
+no generality, since a `0`-sub-additive `Φ` is `ρ`-sub-additive for any `ρ > 0`. `X` is finite
 (standing assumption).
 
 State: see `ANCHORS.md`.

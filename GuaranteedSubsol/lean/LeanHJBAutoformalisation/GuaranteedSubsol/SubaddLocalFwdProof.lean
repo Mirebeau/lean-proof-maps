@@ -17,7 +17,7 @@ Provider proof for the frozen anchor `GuaranteedSubsol.kruzkov_local_of_subAddit
 With `a = 1/α`, `w = u + t exp(a u)` and `v = E_α u`, one has `E_α w ≤ v + a t` pointwise (by
 `1 - exp(-z) ≤ z`). Monotonicity and `ρ`-sub-additivity of `Φ_α` give
 `E_α (Λ w) ≤ E_α (Λ u) + ρ a t`, and `log(1 - x) ≥ -x - 2x²` for `0 ≤ x ≤ 1/2` yields the
-expansion. Only monotonicity of `Λ` is used; the continuity hypothesis of V1 is not needed.
+expansion. Only monotonicity of `Λ` is used; the continuity hypothesis of the paper is not needed.
 -/
 
 open Filter Topology

@@ -19,7 +19,7 @@ is vacuous), producing a sub-solution `ū` and a super-solution `u̲` with `(1 +
 iteration `Δ_n < Δ_max` and each inner loop performs at most `N''_Λ` passes; any `x` lies in at
 most `N'_Λ` narrow bands; and at every point there are at most `N_Λ = N'_Λ N''_Λ` updates of `ū`,
 at most `N_Λ` updates of `u̲`, and at most `N_Γ` updates of `û`. The bounds in `ℕ∞` also express
-termination. As in V1 (author rulings, fixes of V0, now in the paper): `Δ_max := 2α ln(2e/ε) + 2τ`;
+termination. As in the paper: `Δ_max := 2α ln(2e/ε) + 2τ`;
 `n_max := ⌈(‖u_*‖_∞ + Δ_max)/τ⌉`; `2 Δ_max ≤ min u_bd`; `0 < ρ`; `Δ_max` in `N''_Λ`; the bound
 `N_Λ` for each of the two counters. The positivity of the boundary data `u_bd` is not assumed: it
 follows from `2 Δ_max ≤ min u_bd` when `ε ≤ ε_max`. `X` is finite and linearly ordered

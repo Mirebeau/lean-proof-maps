@@ -13,7 +13,7 @@ Source: Prop. prop:Dijkstra_correct (Complexity.tex), last statement
 updated iff its value has decreased. `X` is linearly ordered (tie-breaking).
 Author ruling: the paper's assumptions that `Γ` is monotone, that `Γ u_0 ≤ u_0` and that `X` is
 finite are dropped, being unneeded here (they are used for termination at a fixed point).
-V1 prop:Dijkstra_correct adds a stopping time `T`; these statements are the case `T = ∞`, and
+prop:Dijkstra_correct adds a stopping time `T`; these statements are the case `T = ∞`, and
 imply the general case applied to `Γ^{<T}` (`dijkstraCutOp`).
 
 State: see `ANCHORS.md`.

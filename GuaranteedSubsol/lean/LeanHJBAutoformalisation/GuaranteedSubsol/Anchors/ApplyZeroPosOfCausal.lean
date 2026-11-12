@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ApplyZeroNonnegProof
 /-!
 # Frozen statement: a causal operator is positive on `0`
 
-Source: Prop. prop:cst_subsol (Intro.tex, V1), item enum:Lambda0_delta, causal case: if `Γ` is
+Source: Prop. prop:cst_subsol (Intro.tex), item enum:Lambda0_delta, causal case: if `Γ` is
 causal (and additively invariant), then `Γ[0] > 0` (scalar form, at a point of `Int X`).
 
 State: see `ANCHORS.md`.

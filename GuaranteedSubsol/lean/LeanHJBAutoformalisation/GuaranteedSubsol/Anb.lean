@@ -16,8 +16,7 @@ import Mathlib.Analysis.SpecialFunctions.Pow.Real
 /-!
 # Adaptive Narrow Band (ANB)
 
-Algorithm algo:anb (Intro.tex), modelled as a step function on a state (as requested by a V0
-`\formalizationInstruction`, removed in V1):
+Algorithm algo:anb (Intro.tex), modelled as a step function on a state (author's request):
 * the state holds `n`, the sub-solution `ū` (`uSub`), the super-solution `u̲` (`uSup`), and the
   numbers of updates of `ū`, `u̲` and `û` at each point;
 * line anb:hatu computes `û_n` with Dijkstra's method (algo:Dijkstra), applied to
@@ -260,12 +259,12 @@ noncomputable def anbStep [Fintype X] [LinearOrder X] (p : AnbParams X) (s : Anb
   anbStepWith anbGlobalIter p s
 
 /-- `Δ_max := 2α ln(2e/ε) + 2τ`, the bound on the half-width of the narrow band
-(Corollary corol:max_width, as in V1; V0 had `2α ln(2e/ε) + τ`). -/
+(Corollary corol:max_width). -/
 noncomputable def AnbParams.Δmax (p : AnbParams X) : ℝ :=
   2 * p.α * Real.log (2 * Real.exp 1 / p.ε) + 2 * p.τ
 
-/-- `(‖u_*‖_∞ + Δ_max) / τ`, for the fixed point `u_*`: V1's `n_max` (Corollary corol:max_width)
-is its ceiling `⌈nMax⌉₊`. -/
+/-- `(‖u_*‖_∞ + Δ_max) / τ`, for the fixed point `u_*`: `n_max` (Corollary corol:max_width) is its
+ceiling `⌈nMax⌉₊`. -/
 noncomputable def AnbParams.nMax [Fintype X] (p : AnbParams X) (uFix : X → ℝ) : ℝ :=
   (‖uFix‖ + p.Δmax) / p.τ
 
@@ -296,7 +295,7 @@ inner loops (Prop. prop:niter_while). -/
 noncomputable def AnbParams.NΛ'' (p : AnbParams X) : ℕ :=
   ⌈(2 * p.Δmax / p.α - Real.log (1 - p.ρ)) / (-Real.log p.ρ)⌉₊
 
-/-- `N''_Λ := ⌈2 Δ_max / (-α ln ρ)⌉₊ + 2/(1-ρ)²` (Theorem th:complexity_with_agsi, V1), the
+/-- `N''_Λ := ⌈2 Δ_max / (-α ln ρ)⌉₊ + 2/(1-ρ)²` (Theorem th:complexity_with_agsi), the
 bound on the number of updates at each point of the band in each iteration of the variant with the
 parallel AGSI; its second term is rounded down, since the update counts are integers. -/
 noncomputable def AnbParams.NΛ''agsi (p : AnbParams X) : ℕ :=
@@ -323,7 +322,7 @@ noncomputable def C (q : AnbParams.WithUnknown X) : ℝ :=
 noncomputable def Δmax (q : AnbParams.WithUnknown X) : ℝ :=
   2 * q.β * Real.log (2 * Real.exp 1 * q.C / q.p.ε) + 2 * q.p.τ
 
-/-- `(‖u_*‖_∞ + Δ_max) / τ`: V1's `n_max` (Corollary corol:max_width_withUnknown) is its ceiling
+/-- `(‖u_*‖_∞ + Δ_max) / τ`: `n_max` (Corollary corol:max_width_withUnknown) is its ceiling
 `⌈nMax⌉₊`. -/
 noncomputable def nMax [Fintype X] (q : AnbParams.WithUnknown X) (uFix : X → ℝ) : ℝ :=
   (‖uFix‖ + q.Δmax) / q.p.τ
@@ -333,8 +332,7 @@ noncomputable def εmax [Fintype X] (q : AnbParams.WithUnknown X) (uFix : X → 
   min (q.p.α / (‖uFix‖ + q.Δmax)) 2
 
 /-- `N''_Λ := ⌈(2 Δ_max / α + ln (β / α) - ln (1 - ρ)) / (-ln σ)⌉`, the bound on the number of
-passes of the inner loops (Prop. prop:niter_while_withUnknown, V1; author's ruling 2026-10-16: the
-V0 constant `⌈((2 Δ_max + β ln 2) / α - ln (1 - ρ)) / (-ln σ)⌉` is discarded). -/
+passes of the inner loops (Prop. prop:niter_while_withUnknown). -/
 noncomputable def NΛ'' (q : AnbParams.WithUnknown X) : ℕ :=
   ⌈(2 * q.Δmax / q.p.α + Real.log (q.β / q.p.α) - Real.log (1 - q.p.ρ)) / (-Real.log q.σ)⌉₊
 

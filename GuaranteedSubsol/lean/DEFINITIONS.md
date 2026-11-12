@@ -16,7 +16,7 @@ as requested by the `\formalizationInstruction` box of `Intro.tex`.
 | Stencil (eq. Cpast_dependency, left) | `HasStencil V` | same |
 | `C_past`-dependency (eq. Cpast_dependency) | `HasDependency C V` | same |
 | `C_Γ,C'_Γ`-comparison (l.200) | `Comparable C C'` | same |
-| Comparison principle (Complexity.tex, corrected eq. comparison_Lambda) | `HasComparisonPrinciple I Λ` (global operator, partition `I ⊔ Iᶜ`; `Ext.HasComparisonPrinciple` on `ℝ_∞`) | same; sufficient conditions in `GuaranteedSubsol/ComparisonPrinciple.lean` |
+| Comparison principle (Complexity.tex, eq. comparison_Lambda) | `HasComparisonPrinciple I Λ` (global operator, partition `I ⊔ Iᶜ`; `Ext.HasComparisonPrinciple` on `ℝ_∞`) | same; sufficient conditions in `GuaranteedSubsol/ComparisonPrinciple.lean` |
 | `Γ` of Prop. prop:constr_Gamma (eq. constr_Gamma) | `constrGamma Λ V hV` | `LeanHJBAutoformalisation/GuaranteedSubsol/ConstrGamma.lean` |
 | Kruzkov transform `E_α` (eq. Kruzkov) | `kruzkov αinv` (`αinv = 1/α`) | `LeanHJBAutoformalisation/GuaranteedSubsol/Kruzkov.lean` |
 | Left inverse `E_α⁻¹` (eq. Kruzkov) | `kruzkovInv α` | same |
@@ -126,15 +126,15 @@ band `anbDijkstraBand` (`B'_n`, eq. eqdef:Bpn) of Prop. prop:Dijkstra_band; the 
 (the quantities of iteration `k`) and `AnbStepData.tMinus` (`t⁻_n = t_n - Δ_n`), `AnbStepData.passesSub`, `AnbStepData.passesSup` (the
 numbers of passes of the inner loops, in `ℕ∞`), and
 `AnbStepData.tPlus` (`t⁺_n = (1 + ε) t_n + C_past + C'_Γ + C_Γ Δ_n`, Corollary corol:Bn_comp); and
-the constants of Corollary corol:max_width: `AnbParams.Δmax` (`Δ_max = 2α ln(2e/ε) + 2τ`, corrected
-from the paper's `+ τ`), `AnbParams.nMax` (`n_max`) and `AnbParams.εmax` (`ε_max`), the last two
+the constants of Corollary corol:max_width: `AnbParams.Δmax` (`Δ_max = 2α ln(2e/ε) + 2τ`),
+`AnbParams.nMax` (`n_max`) and `AnbParams.εmax` (`ε_max`), the last two
 as functions of the fixed point `u_*`; the constants of Corollary corol:NGamma:
 `AnbParams.ΔplusMax` (`Δ⁺_max`), `AnbParams.NΛ'` (`N'_Λ`), `AnbParams.NΓ` (`N_Γ`); and
 `AnbParams.NΛ''` (`N''_Λ`, Prop. prop:niter_while). For Theorem th:complexity_withUnknown,
 `AnbParams.WithUnknown` bundles the parameters `p` of the algorithm with the unknown analysis
 constants `β`, `σ` (`Φ_β` is `σ`-sub-additive), with the constants `WithUnknown.C`
-(`(1 - ρ)^(α/β)/(1 - σ)`), `WithUnknown.Δmax` (`2β ln(2eC/ε) + 2τ`, corrected from `+ τ`),
-`WithUnknown.nMax`, `WithUnknown.εmax`, `WithUnknown.NΛ''` (the V1 constant
+(`(1 - ρ)^(α/β)/(1 - σ)`), `WithUnknown.Δmax` (`2β ln(2eC/ε) + 2τ`),
+`WithUnknown.nMax`, `WithUnknown.εmax`, `WithUnknown.NΛ''` (the constant of the paper
 `⌈(2Δ_max/α + ln(β/α) - ln(1 - ρ))/(-ln σ)⌉`), and `WithUnknown.ΔplusMax`,
 `WithUnknown.NΛ'`, `WithUnknown.NΓ` (built from the modified `Δ_max`)
 (Corollary corol:max_width_withUnknown, Prop. prop:niter_while_withUnknown). The inner loops act on the band

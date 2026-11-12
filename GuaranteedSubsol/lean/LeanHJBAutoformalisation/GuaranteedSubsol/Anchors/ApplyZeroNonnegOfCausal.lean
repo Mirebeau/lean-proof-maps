@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.ApplyZeroNonnegProof
 /-!
 # Frozen statement: `Λ[0] ≥ 0` under Assumption assum:all
 
-Source: the remark after Prop. prop:always_subsol (Complexity.tex, V1), author's request:
+Source: the remark after Prop. prop:always_subsol (Complexity.tex), author's request:
 the assumption `Λ[0] ≥ 0` of Prop. prop:always_subsol follows from Assumption assum:all. If `Λ` has
 the Dirichlet data `ubd ≥ 0` outside `I = Int X` (non-negative boundary conditions), and `Γ` is
 additively invariant and causal on `Int X` and underestimates `Λ`, then `Λ[0] ≥ 0` on `X` (in

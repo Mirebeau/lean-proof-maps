@@ -11,7 +11,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNGammaProof
 Source: Corollary corol:NGamma (Complexity.tex), eq. count_x_in_Bn, right:
 `#{n ≥ 1 | x ∈ B'_n} ≤ N_Γ`, stated for every finite set `S` of indices `k` with `x ∈ B'_{k+1}`.
 Hypotheses: those of Corollary corol:max_width (see `anbRunData_Δ_lt_Δmax`, with
-`Δ_max := 2α ln(2e/ε) + 2τ`, as in V1), together with the `C_past`-memory of `Λ` on `Int X`,
+`Δ_max := 2α ln(2e/ε) + 2τ`, as in the paper), together with the `C_past`-memory of `Λ` on `Int X`,
 `C_past ≥ 0` and `C'_Γ ≥ 0`, used through Corollary corol:Bn_comp. `Δ⁺_max`, `N'_Λ` and `N_Γ` are
 `AnbParams.ΔplusMax`, `AnbParams.NΛ'` and `AnbParams.NΓ`. `X` is finite and
 linearly ordered (tie-breaking).

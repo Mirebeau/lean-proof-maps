@@ -8,10 +8,10 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapProof
 /-!
 # Frozen statement: the ANB with sorted lists is equivalent to the ANB with a placeholder
 
-Source: Prop. prop:correct_anb_lazy (Complexity.tex, V1), for algo:anb_lazy with the sorted lists
+Source: Prop. prop:correct_anb_lazy (Complexity.tex), for algo:anb_lazy with the sorted lists
 `L`, `M`, `S` stored in ordered partial maps (`anbHeapRunWith`, `AnbHeap.lean`), compared with the
 ANB with a placeholder (`anbLazyRunWith`; author's request), itself equivalent to algo:anb by
-`anbLazyRun_equiv`. As in V1 (author's rulings 2026-10-16, fixes of V0, now in the paper): line
+`anbLazyRun_equiv`. As in the paper: line
 anb_lazy:olu_gets_hatu also updates the points of `S` with key in `[(n-1)τ, nτ[`; there, the
 placeholder is set exactly when `nτ` is selected in `min {nτ, ǔ}`; a fourth list `Sc` (the keys
 `u̲~` of the placeholders, eq. eqdef:Sc_heap) makes the stopping test exactly that of algo:anb. For

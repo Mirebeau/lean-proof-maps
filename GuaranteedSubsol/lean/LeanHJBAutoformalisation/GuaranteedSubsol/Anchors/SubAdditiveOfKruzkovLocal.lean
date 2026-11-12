@@ -13,8 +13,8 @@ hypothesis (the `o(t)` variant): if `Λ` is monotone and continuous and, for eve
 `Λ [u + t exp(u/α)] ≤ Λ u + ρ t exp(Λ u / α) + o(t)` as `t → 0⁺`, then `Φ_α = kruzkovOp α Λ`
 is `ρ`-sub-additive. The `o(t)` is written `∀ η > 0, ∀ᶠ t in 𝓝[>] 0, … + η t`;
 `α * αinv = 1`.
-As in V1, `Λ` is continuous (author ruling; V0 assumed it locally Lipschitz); `X` is `Finite`
-(only continuity and finiteness are used); `0 ≤ ρ` in place of V1's `ρ > 0`.
+As in the paper, `Λ` is continuous; `X` is `Finite`
+(only continuity and finiteness are used); `0 ≤ ρ` in place of the paper's `ρ > 0`.
 
 State: see `ANCHORS.md`.
 -/

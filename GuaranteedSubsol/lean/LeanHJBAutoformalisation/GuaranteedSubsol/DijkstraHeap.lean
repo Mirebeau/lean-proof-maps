@@ -15,7 +15,7 @@ import Mathlib.Data.ENat.Basic
 A version of algo:Dijkstra closer to the paper: the list `L` of active pairs is stored in an
 ordered partial map (`OrderedPartialMap`, a model of `std::set`), whose key at `y` is `Γ u y` when
 `Γ u y < u y`, and absent otherwise (`dijkstraKey`; eq. eq:Dijkstra_prop, right). One iteration,
-with the stopping time `T` of algo:Dijkstra (V1):
+with the stopping time `T` of algo:Dijkstra:
 * `bot` gives the smallest active pair `(t, x)`; if there is none, or if `t ≥ T`, the method stops
   (the state is unchanged, except for the cost of `bot`);
 * otherwise `x` is accepted: `u x := t`, the pair is erased, and the keys of the points of the

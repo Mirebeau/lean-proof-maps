@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapCorrectProof
 /-!
 # Frozen statement: Dijkstra's method with a sorted list and a stopping time
 
-Source: Prop. prop:Dijkstra_correct and algo:Dijkstra (Complexity.tex, V1), for the while loop
+Source: Prop. prop:Dijkstra_correct and algo:Dijkstra (Complexity.tex), for the while loop
 with the sorted list `L` and the stopping time `T ∈ ℝ_∞` (`dijkstraHeapLoop`; author's request
 2026-10-20). Hypotheses: `Γ : ℝ_∞^X → ℝ_∞^X` monotone and causal, with stencils `𝒱`; the initial
 `u` satisfies `(Γ u)^{<T} ≤ u`; `L` holds the keys of the active points,

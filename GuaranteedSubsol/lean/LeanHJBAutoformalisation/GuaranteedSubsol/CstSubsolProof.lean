@@ -9,7 +9,7 @@ import Mathlib.Tactic.Linarith
 /-!
 # Prop. prop:cst_subsol: the values of the operators on constants
 
-Provider proofs for the frozen anchors on Prop. prop:cst_subsol (Intro.tex, V1) and the remark
+Provider proofs for the frozen anchors on Prop. prop:cst_subsol (Intro.tex) and the remark
 below it, see `ANCHORS.md`:
 * item enum:Lambda0_delta, strictly causal case: `Γ[0] ≥ δ` (`le_apply_zero_of_strictlyCausal`);
   the causal case `Γ[0] > 0` is `ApplyZeroNonnegProof.apply_zero_pos_of_causal`;

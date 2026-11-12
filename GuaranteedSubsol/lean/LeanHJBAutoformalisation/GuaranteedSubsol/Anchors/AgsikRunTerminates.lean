@@ -8,8 +8,8 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.AgsikProof
 /-!
 # Frozen statement: termination of the AGSIK
 
-Source: Algorithm algo:agsik (AGSI2.tex); the termination claim is from a V0
-`\formalizationInstruction`, removed in V1 (author's request): if `Λ` is monotone on `ℝ_∞`,
+Source: Algorithm algo:agsik (AGSI2.tex); termination claim (author's
+request): if `Λ` is monotone on `ℝ_∞`,
 satisfies the comparison principle and admits a finite sub-solution `w`, then the AGSIK started from
 `u = +∞`, with `ε > 0` and `α > 0` (`αinv = 1/α`), reaches the stopping criterion `u ≤ Λ u + ε`
 after finitely many steps (no a-priori bound). `X` is finite.

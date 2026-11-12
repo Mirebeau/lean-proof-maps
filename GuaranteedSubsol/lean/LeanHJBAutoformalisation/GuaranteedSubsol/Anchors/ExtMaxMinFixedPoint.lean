@@ -12,7 +12,7 @@ Source: Lemma lem:max_min (Complexity.tex), on `ℝ_∞ = WithTop ℝ` (as used 
 Lemma lem:u_less_t): let `Γ : (X → ℝ_∞) → X → ℝ_∞` be causal (`Ext.Causal` at every point). If
 `u = max {ū, Γ u}`, then `û := max {ū, min {T, u}}` satisfies `max {ū, min {T, Γ û}} = û`, and
 `min {u,T} = min {û,T}`. Here `ū` and `T` are real.
-Annotation (author's ruling 2026-10-20): V1 lem:max_min assumes `Γ` monotone and causal and states
+Annotation (author's ruling 2026-10-20): lem:max_min assumes `Γ` monotone and causal and states
 that `û` is the unique fixed point; the anchor proves the fixed-point identity under causality
 only. Uniqueness is not part of the anchor; it follows from `le_of_causal_ext`.
 

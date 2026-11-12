@@ -8,7 +8,7 @@ import LeanHJBAutoformalisation.GuaranteedSubsol.BandProof
 /-!
 # Frozen statement: the operator on a band, with frozen exterior values, is monotone
 
-Source: Lemma lem:monDom (Complexity.tex, V1), first claim, for `Λ_B^v` (eq. eqdef:Lambda_B,
+Source: Lemma lem:monDom (Complexity.tex), first claim, for `Λ_B^v` (eq. eqdef:Lambda_B,
 right): if `Λ` is monotone, so is `Λ_B^v` (`bandOp Λ B v`, acting on `ℝ^B`, the values outside `B`
 being frozen to `v`).
 
