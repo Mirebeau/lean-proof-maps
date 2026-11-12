@@ -11,12 +11,11 @@ import Mathlib.Basic.Real.Basic
 Axioms on a discretization scheme, from the Introduction (`Include/Intro.tex`) of the preprint
 GuaranteedSubsolutions.
 
-At the author's request, the axioms are
-stated for a *scalar* operator `Λ : (X → ℝ) → ℝ`, which stands for `u ↦ Λ u x` at a fixed
-interior point `x ∈ Int X`. Theorem statements will assume "for all `x ∈ Int X`, `(Λ · x)`
-satisfies ...". On `∂X` the paper's global axioms hold trivially, by the Dirichlet boundary
-conditions `Λ u = u_bd`, so the global axioms are recovered by asserting the scalar ones at every
-interior point.
+At the author's request, the axioms are stated for a *scalar* operator `Λ : (X → ℝ) → ℝ`,
+which stands for `u ↦ Λ u x` at a fixed interior point `x ∈ Int X`. Theorem statements will
+assume "for all `x ∈ Int X`, `(Λ · x)` satisfies ...". On `∂X` the paper's global axioms hold
+trivially, by the Dirichlet boundary conditions `Λ u = u_bd`, so the global axioms are recovered
+by asserting the scalar ones at every interior point.
 
 Monotonicity is Mathlib's `Monotone`, since the order on `X → ℝ` is the pointwise order of the
 paper.

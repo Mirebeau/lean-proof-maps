@@ -177,4 +177,6 @@ band), `AnbHeapState.uSub`, `anbHeapInit`, `anbHeapDone`, the per-iteration data
 iterations in the band). The bounds of Prop. prop:complexity_lazy at termination,
 `AnbHeapCostBound` (`AnbHeapComplexity.lean`), with its instances `anbHeapRun_complexity`,
 `anbHeapRun_complexity_withUnknown`, `anbHeapAgsiRun_complexity` (ordinary theorems, author's
-decision).
+decision). The frozen anchors `anbHeapRun_correct_complexity` and
+`anbHeapRun_correct_complexity_withUnknown` (`AnbHeapCorrectComplexityProof.lean`) add the
+correctness at termination, the band half-width and the bounds per point (eq. eq:ln_N_eps).

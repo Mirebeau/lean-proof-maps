@@ -44,9 +44,8 @@ variable [Fintype X] [LinearOrder X] [LinearOrder V]
 def entries (v : X → Option V) : Finset (V ×ₗ X) :=
   Finset.univ.filterMap (fun x => (v x).map fun t => toLex (t, x)) (by
     intro x x' p hx hx'
-    simp only [Option.mem_def, Option.map_eq_some_iff] at hx hx'
-    obtain ⟨t, -, rfl⟩ := hx
-    obtain ⟨t', -, h⟩ := hx'
+    obtain ⟨t, -, rfl⟩ := Option.map_eq_some_iff.1 hx
+    obtain ⟨t', -, h⟩ := Option.map_eq_some_iff.1 hx'
     exact (congrArg Prod.snd (toLex.injective h)).symm)
 
 /-- The smallest entry `(t, x)` for the lexicographic order (`none` if there is no entry). -/
