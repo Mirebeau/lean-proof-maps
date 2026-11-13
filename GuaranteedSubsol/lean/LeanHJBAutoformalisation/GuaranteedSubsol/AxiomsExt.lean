@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Basic.Real.Basic
-import Mathlib.Algebra.Order.Ring.WithTop
+module
+
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Algebra.Order.Ring.WithTop
 
 /-!
 # Scheme axioms for operators on `ℝ_∞`
@@ -21,6 +23,8 @@ REVIEW: as in `Axioms.lean`, the constraints on the constants (`C_past ≥ 0`, `
 `ρ < 1`, `C_Γ ≥ 1`, ...) are theorem hypotheses. In `Comparable`, `↑C * ⊤ = ⊤` has the intended
 meaning only for `C > 0`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.Ext
 

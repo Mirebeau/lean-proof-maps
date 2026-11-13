@@ -3,11 +3,13 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAGSI
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Data.Fintype.BigOperators
-import Mathlib.Tactic.Linarith
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAGSI
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Data.Fintype.BigOperators
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
 /-!
 # Parallel AGSI: the output of the loop
@@ -21,6 +23,8 @@ sub-solution variants:
 * a bound on the number of updates at each point, uniform along the loop, implies that the loop
   stops (`passes_lt_top_of_count_le`): each pass before the stop performs at least one update.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ParallelAgsiResultProof
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.CpastFormulationProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CpastFormulationProof
 
 /-!
 # Frozen statement: `C_past`-memory implies eq. (Lambda_max_u_t)
@@ -14,6 +16,8 @@ monotone, additively invariant and has `C_past`-memory, then `Λ u = Λ max {u,t
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

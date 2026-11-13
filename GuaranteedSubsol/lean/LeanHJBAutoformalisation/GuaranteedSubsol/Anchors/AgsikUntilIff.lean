@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AgsikCriterion
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AgsikCriterion
 
 /-!
 # Frozen statement: reformulation of the intermediate stopping criterion of the AGSIK
@@ -16,6 +18,8 @@ paragraph before the algorithm (with the convention `ln t = -∞` for `t ≤ 0`)
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

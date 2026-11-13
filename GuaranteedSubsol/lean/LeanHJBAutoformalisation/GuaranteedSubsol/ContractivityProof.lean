@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Analysis.Normed.Field.Basic
-import Mathlib.Topology.MetricSpace.Contracting
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Analysis.Normed.Field.Basic
+public import Mathlib.Topology.MetricSpace.Contracting
 
 /-!
 # Contractivity of monotone sub-additive operators
@@ -17,6 +19,8 @@ Prop. prop:contractivity (Complexity.tex): a monotone `ρ`-sub-additive operator
 approached by the iterates at the a-priori Banach rate. The fixed point part is Mathlib's
 `ContractingWith` (Banach fixed point theorem).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ContractivityProof
 

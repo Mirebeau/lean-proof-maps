@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
-import Mathlib.Algebra.Order.Monoid.Unbundled.MinMax
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
+public import Mathlib.Algebra.Order.Monoid.Unbundled.MinMax
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Max and min of causal, sub-additive and sub-multiplicative operators on `ℝ_∞`
@@ -22,6 +24,8 @@ at a level commutes with `max` and `min` in any linear order. The other two axio
 the monotonicity of `max` and `min`, of translation `x ↦ x + c`, and of multiplication
 `x ↦ ↑k * x` by a positive real `k` on `WithTop ℝ`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ExtCausalMixProof
 

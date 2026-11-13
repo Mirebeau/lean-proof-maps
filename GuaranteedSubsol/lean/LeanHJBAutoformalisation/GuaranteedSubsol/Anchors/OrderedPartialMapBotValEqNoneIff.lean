@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMapProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMapProof
 
 /-!
 # Frozen statement: `bot` of an ordered partial map returns nothing iff the map is empty
@@ -14,6 +16,8 @@ finite and linearly ordered, `V` linearly ordered.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.OrderedPartialMap
 

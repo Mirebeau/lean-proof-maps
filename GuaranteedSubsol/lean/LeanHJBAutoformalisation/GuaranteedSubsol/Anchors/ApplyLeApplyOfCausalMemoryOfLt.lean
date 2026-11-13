@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.MonMinMaxProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.MonMinMaxProof
 
 /-!
 # Frozen statement: monotonicity restricted to a window of values, strict lower level
@@ -16,6 +18,8 @@ invariant, with `C_past`-memory; let `t₀ < Λ u - C_past` and `t₁ ≥ Λ u`.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

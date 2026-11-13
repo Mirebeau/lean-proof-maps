@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIteration
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Algebra.Order.Archimedean.Real.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIteration
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
 
 /-!
 # Global iteration: proofs
@@ -21,6 +23,8 @@ Provider proofs for the frozen anchors on Algorithm algo:global_iteration, see `
   `ρ`; once the criterion holds, the run stops.
 * Termination: `ρ^N C ≤ η` for `N := ⌈ln(C/η)/(-ln ρ)⌉₊` (`pow_mul_le`).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.GlobalIterationProof
 

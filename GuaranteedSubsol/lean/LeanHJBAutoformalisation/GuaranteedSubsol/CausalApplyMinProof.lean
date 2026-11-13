@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
+public import Mathlib.Tactic.Linarith
 
 /-!
 # A causal operator ignores values above its output: proofs
@@ -16,6 +18,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.Causal.apply_eq_apply_m
 gives `δ > 0` with `min (Γ u) (t+δ) = min (Γ min {u,t}) (t+δ)`; since `Γ u ≤ t < t + δ`, the left
 side is `Γ u`, which forces `Γ min {u,t} < t + δ` and the equality.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.CausalApplyMinProof
 

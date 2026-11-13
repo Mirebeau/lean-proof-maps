@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.SubaddConcaveProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.Rescale
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.SubaddConcaveProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Rescale
 
 /-!
 # Strict causality implies sub-additivity of `Φ_α`: proof
@@ -19,6 +21,8 @@ Provider proof for the frozen anchor `GuaranteedSubsol.subAdditive_kruzkovOp_of_
 * General `α`: `Φ_α` of `Λ` is `Φ_1` of the rescaled operator `rescaleOp α Λ`, which is
   monotone, `1`-sub-additive and `δ/α`-strictly-causal (`Rescale.lean`).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.StrictCausalSubaddProof
 

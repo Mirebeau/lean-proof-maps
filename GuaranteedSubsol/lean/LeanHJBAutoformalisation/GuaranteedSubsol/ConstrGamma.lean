@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Data.Finset.Lattice.Fold
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Data.Finset.Lattice.Fold
 
 /-!
 # Construction of `Γ` from `Λ`
@@ -12,6 +14,8 @@ import Mathlib.Data.Finset.Lattice.Fold
 The underestimating operator of Prop. prop:constr_Gamma (Intro.tex, eq. (constr_Gamma)),
 in scalar form at an interior point `x ∈ Int X`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

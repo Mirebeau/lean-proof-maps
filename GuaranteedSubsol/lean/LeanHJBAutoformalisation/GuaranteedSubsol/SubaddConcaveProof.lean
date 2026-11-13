@@ -3,11 +3,13 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.SubaddLocalFwdProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.SubaddLocalBwdProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.LocalXProof
-import Mathlib.Analysis.Convex.Continuous
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.SubaddLocalFwdProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.SubaddLocalBwdProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.LocalXProof
+public import Mathlib.Analysis.Convex.Continuous
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
 
 /-!
 # Sub-additivity of `Φ_α` for concave schemes and at larger timescales: proofs
@@ -24,6 +26,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.subAdditive_kruzkovOp_i
   `1`-sub-additivity turns (subadd_local_x) at timescale `α` into the same expansion at
   timescale `β` with constant `ρ s + (1 - s) ≤ σ`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.SubaddConcaveProof
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Basic.Real.Basic
+module
+
+public import Mathlib.Basic.Real.Basic
 
 /-!
 # Scheme axioms of GuaranteedSubsolutions (Introduction)
@@ -23,6 +25,8 @@ paper.
 REVIEW: the constants are unconstrained reals in the definitions. The paper's constraints
 (`C_past ≥ 0`, `δ > 0`, `ν > 0`, `0 ≤ ρ < 1`) are to be stated as theorem hypotheses.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

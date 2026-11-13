@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalCutoffProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalCutoffProof
 
 /-!
 # Frozen statement: causality on `ℝ_∞` in terms of cutoffs
@@ -14,6 +16,8 @@ Source: Prop. prop:causal_formulation (Complexity.tex), eq. (causal_old), scalar
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.Ext
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ConstrGammaProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ConstrGammaProof
 
 /-!
 # Frozen statement: construction of `Γ` from `Λ` (pointwise)
@@ -18,6 +20,8 @@ underestimates `Λ`, and is `C_Γ, C'_Γ`-comparable with `C_Γ = C_past / δ` a
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

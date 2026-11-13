@@ -3,16 +3,18 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Anb
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterationProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiKruzkovProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonPrinciple
-import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExtTransfer
-import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalMixProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ULessTProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.BandProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiResultProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Anb
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterationProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiKruzkovProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonPrinciple
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExtTransfer
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalMixProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ULessTProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.BandProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiResultProof
 
 /-!
 # ANB: proofs
@@ -44,6 +46,8 @@ The results are stated for the ANB with any inner solver `S` satisfying `AnbInne
 (instances: the global iteration `anbGlobalIter` of algo:anb, and the parallel AGSI `anbAgsi` of
 Theorem th:complexity_with_agsi); `anbRunWith S p` is `anbRunWith anbGlobalIter p` by definition.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbProof
 

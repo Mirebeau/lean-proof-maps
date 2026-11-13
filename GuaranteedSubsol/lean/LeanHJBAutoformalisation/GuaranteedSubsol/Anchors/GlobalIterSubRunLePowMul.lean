@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterationProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterationProof
 
 /-!
 # Frozen statement: contraction of the residual along the sub-solution global iteration
@@ -15,6 +17,8 @@ at most `max (ρ^n C) η`.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

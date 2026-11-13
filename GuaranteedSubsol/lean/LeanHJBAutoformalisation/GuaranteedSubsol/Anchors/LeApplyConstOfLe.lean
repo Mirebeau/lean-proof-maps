@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.CstSubsolProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CstSubsolProof
 
 /-!
 # Frozen statement: constants below the boundary data are sub-solutions (`Γ ≤ Λ` case)
@@ -14,6 +16,8 @@ Source: Prop. prop:cst_subsol (Intro.tex), eq. eq:cst_subsol, second case: if `�
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

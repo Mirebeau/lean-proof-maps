@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbBnCompProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbBnCompProof
 
 /-!
 # Frozen statement: the exact solution on the band `B'_n` of Dijkstra's method in the ANB
@@ -23,6 +25,8 @@ ordered (tie-breaking).
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
 /-!
 # `Λ[0] ≥ -α ln ρ` when `Φ_α` is `ρ`-sub-additive: proof
@@ -19,6 +21,8 @@ The general version `le_apply_zero_of_kruzkov_subAdditive'` only assumes `0 ≤ 
 the sub-additivity is contradictory), drops `0 < ρ` (it follows), and replaces monotonicity of
 `Λ` by `Λ w ≤ Λ 0` for all `w ≤ 0`, which is exactly `Λ_∞ 0 = Λ 0`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.Lambda0SubaddProof
 

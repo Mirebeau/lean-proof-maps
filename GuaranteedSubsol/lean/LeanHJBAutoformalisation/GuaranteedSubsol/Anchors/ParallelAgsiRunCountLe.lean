@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiProof
 
 /-!
 # Frozen statement: bound on the total number of updates of the parallel AGSI
@@ -16,6 +18,8 @@ Author ruling: the assumption `η > 0` is dropped, being unneeded.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

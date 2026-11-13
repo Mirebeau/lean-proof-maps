@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalCutoffProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalMixProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalCutoffProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalMixProof
 
 /-!
 # Cutting a fixed point of `max {ū, Γ}` at a level `T` on `ℝ_∞`: proof
@@ -16,6 +18,8 @@ lattice identities proved in any linear order. The second uses the cutoff formul
 causality `ExtCausalCutoffProof.causal_iff_cutoff`, applied to the causal operator
 `w ↦ max {ū x, Γ w x}`, and then the first lemma.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ULessTProof
 

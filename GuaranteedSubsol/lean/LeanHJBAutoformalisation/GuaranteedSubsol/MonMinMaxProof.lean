@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalApplyMinProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.CpastFormulationProof
-import Mathlib.Data.Fintype.Lattice
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalApplyMinProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CpastFormulationProof
+public import Mathlib.Data.Fintype.Lattice
 
 /-!
 # Monotonicity restricted to a window of values: proofs
@@ -21,6 +23,8 @@ corol:mon_min_max (Complexity.tex), scalar form.
 * Boundary case `t₀ = Λ u - C`: since `X` is finite, some `t₀' < t₀` leaves no value of `u` in
   `[t₀', t₀[`, and the strict case applies at `t₀'`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.MonMinMaxProof
 

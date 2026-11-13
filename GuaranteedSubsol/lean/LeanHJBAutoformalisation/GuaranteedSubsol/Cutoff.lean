@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Basic.Real.Basic
-import Mathlib.Order.WithBot
+module
+
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Order.WithBot
 
 /-!
 # Cutoff above a level
@@ -14,6 +16,8 @@ Prop. prop:causal_formulation), on `ℝ_∞ = WithTop ℝ`: values below `t` are
 sent to `∞`. Applied pointwise to `u : X → ℝ_∞`, it gives `u^{<t}`. Likewise `a ↦ a^{≤t}` keeps
 the values `≤ t`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

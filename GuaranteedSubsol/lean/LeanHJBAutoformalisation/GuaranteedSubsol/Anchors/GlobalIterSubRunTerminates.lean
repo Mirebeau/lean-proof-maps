@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterationProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterationProof
 
 /-!
 # Frozen statement: termination of the sub-solution global iteration
@@ -15,6 +17,8 @@ algo:global_iteration, sub-solution variant: for `Φ` monotone and `ρ`-sub-addi
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

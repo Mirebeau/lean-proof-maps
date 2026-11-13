@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
 
 /-!
 # Frozen statement: the ANB only updates the band
@@ -13,6 +15,8 @@ Source: Algorithm algo:anb, lines anb:while_sub and anb:while_sup (Intro.tex): o
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

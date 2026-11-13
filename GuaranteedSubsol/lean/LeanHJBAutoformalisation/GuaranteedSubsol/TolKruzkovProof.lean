@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
-import Mathlib.Analysis.SpecialFunctions.Exp
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
+public import Mathlib.Analysis.SpecialFunctions.Exp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
 
 /-!
 # The tolerance criterion in Kruzkov coordinates: proof
@@ -15,6 +17,8 @@ Provider proof for the frozen anchor `GuaranteedSubsol.le_mul_iff_kruzkov` (see 
 Complexity.tex, eq. (tol_as_Kruzkov). One has `v̄ exp(-ε αinv ū) = E((1+ε) ū)`, and the Kruzkov
 transform `E = kruzkov αinv` is an order embedding of `ℝ_∞` for `αinv > 0`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.TolKruzkovProof
 

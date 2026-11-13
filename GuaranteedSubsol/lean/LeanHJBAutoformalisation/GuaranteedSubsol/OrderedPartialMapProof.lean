@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMap
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMap
 
 /-!
 # Ordered partial maps: specification of the operations
@@ -13,6 +15,8 @@ cost (the increase of the counter). Provider proofs for the frozen anchors
 `GuaranteedSubsol.OrderedPartialMap.botVal_eq_none_iff`, `…botVal_eq_some_iff` and
 `…entriesIco_fst`, see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.OrderedPartialMapProof
 

@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ConstrGamma
-import Mathlib.Algebra.Order.Field.Basic
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ConstrGamma
+public import Mathlib.Algebra.Order.Field.Basic
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
 
 /-!
 # Construction of `Γ` from `Λ`: proof
@@ -14,6 +16,8 @@ import Mathlib.Tactic.Ring
 Provider proof for the frozen anchor `GuaranteedSubsol.constrGammaLoc` (see `ANCHORS.md`), following
 the proof of Prop. prop:constr_Gamma (Effective.tex), in scalar form at an interior point.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ConstrGamma
 

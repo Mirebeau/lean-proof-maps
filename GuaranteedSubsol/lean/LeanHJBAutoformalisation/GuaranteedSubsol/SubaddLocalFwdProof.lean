@@ -3,11 +3,13 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
-import Mathlib.Topology.EMetricSpace.Lipschitz
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Order.Filter.AtTopBot.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
+public import Mathlib.Topology.EMetricSpace.Lipschitz
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Order.Filter.AtTopBot.Basic
 
 /-!
 # Sub-additivity in Kruzkov coordinates implies the local expansion: proof
@@ -19,6 +21,8 @@ With `a = 1/α`, `w = u + t exp(a u)` and `v = E_α u`, one has `E_α w ≤ v + 
 `E_α (Λ w) ≤ E_α (Λ u) + ρ a t`, and `log(1 - x) ≥ -x - 2x²` for `0 ≤ x ≤ 1/2` yields the
 expansion. Only monotonicity of `Λ` is used; the continuity hypothesis of the paper is not needed.
 -/
+
+@[expose] public section
 
 open Filter Topology
 

@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import LeanHJBAutoformalisation.GuaranteedSubsol.Restriction
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Restriction
 
 /-!
 # Restriction of an operator: monotonicity and partial application
@@ -15,6 +17,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.monotone_restrictOp`,
 (Complexity.tex). If `Λ` is monotonic then so is `Λ_B`, and `Λ_B` maps super-solutions
 (resp. sub-solutions) of `Λ` to super-solutions (resp. sub-solutions).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.RestrictionProof
 

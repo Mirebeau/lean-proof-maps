@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Ring
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Ring
 
 /-!
 # Perturbation into sub- and super-solutions
@@ -16,6 +18,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.subSolution_of_subAddit
 (Complexity.tex) in scalar form: for a `ρ`-sub-additive `Λ` with `ρ < 1`, shifting `u` by
 `t := c / (1 - ρ)` absorbs a residual `c ≥ 0`, using the identity `c + ρ t = t`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.PertSubSuperProof
 

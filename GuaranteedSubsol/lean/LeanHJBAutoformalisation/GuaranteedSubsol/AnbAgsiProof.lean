@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbComplexityProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiSubProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiResultProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbComplexityProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiSubProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiResultProof
 
 /-!
 # ANB with the parallel AGSI: Theorem th:complexity_with_agsi, proof
@@ -27,6 +29,8 @@ for any valid inner solver), replacing Prop. prop:niter_while with Prop. prop:cp
 The AGSI bounds the number of updates at each point of the band, not the number of passes of the
 inner loops: a pass may update a single point.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbAgsiProof
 

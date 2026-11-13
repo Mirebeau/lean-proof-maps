@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapCorrectComplexityProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapCorrectComplexityProof
 
 /-!
 # Frozen statement: correctness and complexity of the ANB with sorted lists (algo:anb_lazy)
@@ -25,6 +27,8 @@ termination, with `N := #X` and `Ñ := ∑ₓ #𝒱̃(x)` (eq. eqdef:stencil_car
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

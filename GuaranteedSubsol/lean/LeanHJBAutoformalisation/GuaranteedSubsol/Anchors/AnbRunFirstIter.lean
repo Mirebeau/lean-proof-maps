@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbFirstIterProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbFirstIterProof
 
 /-!
 # Frozen statement: the first iterations of the ANB are vacuous
@@ -24,6 +26,8 @@ fixed point `kτ`. `X` is finite and linearly ordered (tie-breaking).
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Algebra.Order.Group.MinMax
-import Mathlib.Algebra.Order.Ring.Unbundled.Basic
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Algebra.Order.Group.MinMax
+public import Mathlib.Algebra.Order.Ring.Unbundled.Basic
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Max and min of causal, sub-additive and sub-multiplicative operators
@@ -21,6 +23,8 @@ truncations at level `t + δ₁` implies agreement at any lower level `t + δ`, 
 at a level commutes with `max` and `min`. The other two axioms follow from the monotonicity of
 `max` and `min` and their compatibility with translation and nonnegative scaling.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.CausalMixProof
 

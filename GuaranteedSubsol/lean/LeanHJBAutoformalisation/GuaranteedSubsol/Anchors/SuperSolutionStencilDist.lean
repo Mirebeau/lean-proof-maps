@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.StencilDistProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.StencilDistProof
 
 /-!
 # Frozen statement: an explicit super-solution, from the distance to the boundary
@@ -17,6 +19,8 @@ assumptions (monotonicity, additive invariance, `Λ[0] ≥ δ`) are not needed.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

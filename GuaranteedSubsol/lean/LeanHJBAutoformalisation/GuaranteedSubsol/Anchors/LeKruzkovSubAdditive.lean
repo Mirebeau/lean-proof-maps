@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Lambda0SubaddProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Lambda0SubaddProof
 
 /-!
 # Frozen statement: `Λ[0] ≥ -α ln ρ` when `Φ_α` is `ρ`-sub-additive
@@ -19,6 +21,8 @@ instead of monotonicity) is `Lambda0SubaddProof.le_apply_zero_of_kruzkov_subAddi
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

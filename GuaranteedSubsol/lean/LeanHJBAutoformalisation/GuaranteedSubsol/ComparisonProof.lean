@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Basic.Finite.Defs
-import Mathlib.Data.Fintype.Lattice
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Basic.Finite.Defs
+public import Mathlib.Data.Fintype.Lattice
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Comparison principle for a monotone `ρ`-sub-additive operator
@@ -16,6 +18,8 @@ following Prop. prop:comparison_Phi (Complexity.tex): at a point `x` maximizing 
 `t := u x - v x > 0`, one has `x ∈ I`, and monotonicity and sub-additivity at `x` give
 `t ≤ Φ u x - Φ v x ≤ ρ t`, which contradicts `ρ < 1`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ComparisonProof
 

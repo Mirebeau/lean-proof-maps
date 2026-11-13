@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNGammaProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNGammaProof
 
 /-!
 # ANB: Prop. prop:niter_while and the bound `N_Λ`, proofs
@@ -19,6 +21,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.anbRunData_passes_le` a
 * `countSub_countSup_le` (Theorem th:complexity): the counters increase by at most `N''_Λ` in each
   iteration with `x ∈ B_n`, which happens at most `N'_Λ` times (Corollary corol:NGamma).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbNiterProof
 

@@ -3,11 +3,13 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.Positivity
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.Positivity
 
 /-!
 # Tolerance bounds: proofs of Corol. corol:tol
@@ -22,6 +24,8 @@ Corol. corol:tol of Complexity.tex. The two rescaling results turn an approximat
 by `ν / (ν + ε)` (resp. `ν / (ν - ε)`); the tolerance bounds then follow from the comparison
 principle.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.TolProof
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbWithUnknownProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbWithUnknownProof
 
 /-!
 # Frozen statement: complexity of the ANB with unknown constants (th:complexity_withUnknown)
@@ -22,6 +24,8 @@ the two counters. Departure from the paper (author ruling): `ρ > 0` is not assu
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

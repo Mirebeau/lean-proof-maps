@@ -3,12 +3,14 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAGSI
-import LeanHJBAutoformalisation.GuaranteedSubsol.RestrictionProof
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Algebra.BigOperators.Ring.Finset
-import Mathlib.Algebra.Order.Archimedean.Real.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAGSI
+public import LeanHJBAutoformalisation.GuaranteedSubsol.RestrictionProof
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
 
 /-!
 # Parallel AGSI: proofs
@@ -26,6 +28,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.parallelAgsiStep_superS
 * Termination: each pass before termination performs at least one update, so after `n` such
   passes `∑_X count ≥ n`, which the count bound limits to `n ≤ ∑_X (v - w) / η`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ParallelAgsiProof
 

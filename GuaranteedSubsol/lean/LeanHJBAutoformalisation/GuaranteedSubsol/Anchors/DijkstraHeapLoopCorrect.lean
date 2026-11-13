@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapCorrectProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapCorrectProof
 
 /-!
 # Frozen statement: Dijkstra's method with a sorted list and a stopping time
@@ -22,6 +24,8 @@ and the operations on `L`. This is the form used in the ANB with sorted lists
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

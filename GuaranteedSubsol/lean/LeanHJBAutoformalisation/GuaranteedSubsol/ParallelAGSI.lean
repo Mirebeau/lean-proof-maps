@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Restriction
-import Mathlib.Data.ENat.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Restriction
+public import Mathlib.Data.ENat.Basic
 
 /-!
 # Parallel AGSI
@@ -22,6 +24,8 @@ The sub-solution variant `parallelAgsiSubStep` replaces `v - Φ v` with `Φ v - 
 super-solution version applied to the reflected operator `v ↦ -Φ (-v)` and to `-v`, with the
 resulting map negated back.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

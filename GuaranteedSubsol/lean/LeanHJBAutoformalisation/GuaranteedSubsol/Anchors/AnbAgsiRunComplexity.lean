@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbAgsiProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbAgsiProof
 
 /-!
 # Frozen statement: complexity of the ANB with the parallel AGSI (th:complexity_with_agsi)
@@ -25,6 +27,8 @@ ordered (tie-breaking).
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

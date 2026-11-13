@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ExistsUniqueProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ExistsUniqueProof
 
 /-!
 # Frozen statement: uniqueness of the fixed point in lem:max_min
@@ -16,6 +18,8 @@ point `v` of `Γ' := max {ū, min {T, Γ}}` equals `û`. (That `û` is a fixed p
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

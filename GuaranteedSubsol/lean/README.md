@@ -16,7 +16,7 @@ Do not edit them here.
 
 ## Building
 
-1. Install Lean through `elan`: <https://lean-lang.org/install/>. The Lean version (`v4.34.1`) is
+1. Install Lean through `elan`: <https://lean-lang.org/install/>. The Lean version (`v4.35.0`) is
    fixed by `lean-toolchain` and downloaded automatically.
 2. Get the sources and build:
 

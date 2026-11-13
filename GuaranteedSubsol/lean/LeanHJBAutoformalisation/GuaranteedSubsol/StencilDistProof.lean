@@ -3,12 +3,14 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.StencilDist
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Logic.Relation
-import Mathlib.Data.Set.Finite.Lattice
-import Mathlib.Data.Set.Finite.Range
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.StencilDist
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Logic.Relation
+public import Mathlib.Data.Set.Finite.Lattice
+public import Mathlib.Data.Set.Finite.Range
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Super-solution from the distance to the boundary: proofs
@@ -21,6 +23,8 @@ On the boundary, `d_V(x, ∂X) = 0` and `u = M ≥ u_bd = Λ u`. At an interior 
 makes `d := d_V(x, ∂X)` finite, `d = m + 1`, and some `y ∈ V x` has `d_V(y, ∂X) ≤ m`, so that
 `Λ u(x) ≤ C_past + u(y) ≤ C_past (m + 1) + M = u(x)`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.StencilDistProof
 

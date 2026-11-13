@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterKruzkovProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterKruzkovProof
 
 /-!
 # Frozen statement: the global iteration for `Φ_α` stops when `Φ_β` is `σ`-sub-additive
@@ -21,6 +23,8 @@ comparison principle; the paper's `C ≥ 0` is not needed (`C` only enters throu
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

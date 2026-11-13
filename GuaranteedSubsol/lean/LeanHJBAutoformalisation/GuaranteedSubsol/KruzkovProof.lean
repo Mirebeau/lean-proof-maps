@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
-import Mathlib.Order.ConditionallyCompleteLattice.Indexed
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
+public import Mathlib.Order.ConditionallyCompleteLattice.Indexed
 
 /-!
 # Kruzkov operator: monotonicity and multiplicative invariance
@@ -15,6 +17,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.monotone_monotoneExtens
 from Prop. prop:monotonic_Phi (Complexity.tex). No monotonicity of `Λ` is needed, thanks to the
 generalized `monotoneExtension` (supremum over finite minorants).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.KruzkovProof
 

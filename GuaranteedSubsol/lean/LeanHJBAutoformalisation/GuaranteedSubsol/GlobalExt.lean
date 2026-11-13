@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
-import Mathlib.Basic.Finite.Defs
-import Mathlib.Data.Fintype.Lattice
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
+public import Mathlib.Basic.Finite.Defs
+public import Mathlib.Data.Fintype.Lattice
 
 /-!
 # Global scheme axioms for operators on `ℝ_∞`
@@ -20,6 +22,8 @@ axiom is equivalent to the local axiom of `Λ · x` for all `x ∈ I`. For causa
 finiteness of `X` (to take the minimum of the `δ`'s); for sub-additivity, `ρ ≥ 0` and `Φ`
 constant off `I`. This mirrors the real-valued module `Global.lean`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.Global.Ext
 

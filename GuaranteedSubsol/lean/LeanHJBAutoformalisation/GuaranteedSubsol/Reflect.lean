@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Rescale
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Rescale
 
 /-!
 # Reflection of an operator
@@ -17,6 +19,8 @@ principle are preserved (each an equivalence, by involutivity).
 
 Not from the paper: introduced at the author's request.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

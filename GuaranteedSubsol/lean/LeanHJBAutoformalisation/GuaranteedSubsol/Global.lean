@@ -3,11 +3,13 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Basic.Finite.Defs
-import Mathlib.Data.Fintype.EquivFin
-import Mathlib.Data.Finset.Lattice.Fold
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Basic.Finite.Defs
+public import Mathlib.Data.Fintype.EquivFin
+public import Mathlib.Data.Finset.Lattice.Fold
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Global form of the scheme axioms
@@ -29,6 +31,8 @@ which is constant off `I`.
 Axioms already stated "on `Int X`" in the paper (additive invariance, sub-multiplicativity,
 comparison) need no lemma, and `C_past`-dependency is pointwise by nature.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.Global
 

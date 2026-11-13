@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbWithUnknownProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbWithUnknownProof
 
 /-!
 # Frozen statement: the inner loops of the ANB stop after at most `N''_Λ` passes, unknown parameters
@@ -23,6 +25,8 @@ Hypotheses: those of Corollary corol:max_width_withUnknown: the parts of assum:a
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

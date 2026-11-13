@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiCplxProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiSubProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiCplxProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiSubProof
 
 /-!
 # Parallel AGSI applied to `Φ_α`: proofs
@@ -14,6 +16,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.parallelAgsiRun_kruzkov
 `Φ_α = Global.kruzkovOp α Λ` is monotone for `α > 0` (`monotone_kruzkovOp`), whatever `Λ`, so the
 complexity bounds for a monotone `ρ`-sub-additive operator apply.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ParallelAgsiKruzkovProof
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
 
 /-!
 # AGSIK
@@ -24,6 +26,8 @@ With `-kruzkov αinv a = exp(-a/α)` (and `+∞ ↦ 0`), `αinv = 1/α`, the sel
 
 The state also records the number of updates at each point.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

@@ -3,14 +3,16 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Dijkstra
-import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
-import Mathlib.SetTheory.Cardinal.Finite
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Order.Lex
-import Mathlib.Data.Set.Finite.Lemmas
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Dijkstra
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
+public import Mathlib.SetTheory.Cardinal.Finite
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Order.Lex
+public import Mathlib.Data.Set.Finite.Lemmas
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Generalized Dijkstra: proofs
@@ -30,6 +32,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.dijkstraStep_superSolut
 * Termination: if all the first `card X` steps perform an update, all points have been updated,
   hence none is active.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.DijkstraProof
 

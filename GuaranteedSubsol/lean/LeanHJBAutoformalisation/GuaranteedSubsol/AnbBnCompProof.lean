@@ -3,13 +3,15 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.SubsolGrowthProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.GraphSubsolProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinMonCausalProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalFixedPointProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalMixProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.SubsolGrowthProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.GraphSubsolProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinMonCausalProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalFixedPointProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalMixProof
 
 /-!
 # ANB: Corollary corol:Bn_comp, proofs
@@ -26,6 +28,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.anbRunData_band_bounds`
   the definition of `t_n` and `u_* ≤ u̲_n` (`uFix_le_uSup`) give `u_* ≤ (1 + ε) u`, so that
   Prop. prop:olu_ge_ustar applies.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbBnCompProof
 

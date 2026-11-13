@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import LeanHJBAutoformalisation.GuaranteedSubsol.CpastFormulationProof
-import Mathlib.Algebra.Order.Field.Basic
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CpastFormulationProof
+public import Mathlib.Algebra.Order.Field.Basic
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Growth of a sub-solution above a level: proof
@@ -18,6 +20,8 @@ prop:olu_ge_ustar (Complexity.tex). With `T = C_past + C'_Γ + (1+ε) t - C_Γ t
 on `J \ I`, `Λ w = ubd = Γ u ≤ u ≤ w`. Off `J`, `uSub ≤ (1+ε) u ≤ w`. The comparison principle
 gives `uSub ≤ w`, which on `J` is the claimed bound.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.SubsolGrowthProof
 

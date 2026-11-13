@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeap
-import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMapProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeap
+public import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMapProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
 
 /-!
 # Dijkstra's method with a sorted list: proof
@@ -22,6 +24,8 @@ coincides with one iteration of algo:Dijkstra applied to `Γ^{<T}` (`step_spec`)
 The costs follow: `1` for a step that stops, `2 + #𝒱̃ x` operations on `L` and `#𝒱̃ x`
 evaluations of `Γ` for a step that accepts `x`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.DijkstraHeapProof
 

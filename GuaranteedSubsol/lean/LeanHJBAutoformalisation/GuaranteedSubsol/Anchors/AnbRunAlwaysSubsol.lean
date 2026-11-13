@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
 
 /-!
 # Frozen statement: the invariants of the ANB
@@ -17,6 +19,8 @@ of eq. eqdef:Dijkstra_supsol (Prop. prop:Dijkstra_band), whose super-solution pr
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

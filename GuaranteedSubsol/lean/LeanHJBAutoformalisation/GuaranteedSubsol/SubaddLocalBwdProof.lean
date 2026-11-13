@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
-import Mathlib.Topology.EMetricSpace.Lipschitz
-import Mathlib.Topology.Order.IntermediateValue
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
+public import Mathlib.Topology.EMetricSpace.Lipschitz
+public import Mathlib.Topology.Order.IntermediateValue
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
 /-!
 # The local expansion implies sub-additivity of `Φ_α`: proof
@@ -25,6 +27,8 @@ Provider proof for the frozen anchor `GuaranteedSubsol.subAdditive_of_kruzkov_lo
 
 As in the paper, only the continuity of `Λ` is assumed.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.SubaddLocalBwdProof
 

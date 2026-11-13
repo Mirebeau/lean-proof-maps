@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiTermProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiTermProof
 
 /-!
 # Frozen statement: the parallel AGSI terminates (sub-solution version)
@@ -15,6 +17,8 @@ of updates at each point is `parallelAgsiSubRun_count_le_of_subAdditive`.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

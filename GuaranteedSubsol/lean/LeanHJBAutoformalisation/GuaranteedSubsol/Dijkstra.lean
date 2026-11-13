@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Basic.Real.Basic
-import Mathlib.Order.WithBot
-import Mathlib.Logic.Function.Basic
+module
+
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Order.WithBot
+public import Mathlib.Logic.Function.Basic
 
 /-!
 # Generalized Dijkstra algorithm
@@ -19,6 +21,8 @@ each point. The model has no stopping time (the case `T = ∞` of algo:Dijkstra)
 time `T` corresponds to running it on `Γ^{<T}` (`dijkstraCutOp`, `DijkstraHeap.lean`), as in the
 proof of Prop. prop:Dijkstra_correct.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

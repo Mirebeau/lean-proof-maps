@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Basic.Real.Basic
+module
+
+public import Mathlib.Basic.Real.Basic
 
 /-!
 # An operator acting on a band, with frozen values outside
@@ -18,6 +20,8 @@ AGSI, ...) can be run on the band. Compared with the restriction `Φ_B` of `Rest
 identity outside `B`), the band operator inherits monotonicity and `ρ`-sub-additivity from `Φ` at
 the points of `B`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

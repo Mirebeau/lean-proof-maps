@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalCutoffProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalCutoffProof
 
 /-!
 # Dijkstra's method with a sorted list and a stopping time: correctness
@@ -16,6 +18,8 @@ algo:Dijkstra applied to it reaches a fixed point within `#X` steps, updating ea
 once (`DijkstraProof`); the while loop with the sorted list follows it
 (`DijkstraHeapProof.loop_spec`). At the fixed point, no key of `L` is below `T`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.DijkstraHeapCorrectProof
 

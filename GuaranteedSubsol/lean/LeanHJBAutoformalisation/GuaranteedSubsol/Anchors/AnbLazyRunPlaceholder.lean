@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbLazyProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbLazyProof
 
 /-!
 # Frozen statement: where the placeholder of the ANB with a placeholder sits
@@ -18,6 +20,8 @@ ruling 2026-10-17). `X` is finite and linearly ordered (tie-breaking).
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

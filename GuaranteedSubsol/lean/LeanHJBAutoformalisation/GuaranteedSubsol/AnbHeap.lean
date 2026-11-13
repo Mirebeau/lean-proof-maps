@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbLazy
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeap
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbLazy
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeap
 
 /-!
 # The ANB with sorted lists (algo:anb_lazy)
@@ -47,6 +49,8 @@ The state records the operation counters: of `L` (`dij.L.count`), `M`, `S`, `Sc`
 evaluations of `Γ` (`dij.evalCount`), the acceptances of Dijkstra's method at each point
 (`dij.count`), and the numbers of updates of `ū` and `u̲~` at each point.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

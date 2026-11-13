@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AGSIK
-import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AGSIK
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Analysis.SpecificLimits.Basic
 
 /-!
 # AGSIK: proofs
@@ -25,6 +27,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.agsikStep_superSolution
   `exp(-Λu(x)/α) - exp((ε-u(x))/α) > 0` would eventually exceed `2^{-n}`, and `x` would be
   selected again: a contradiction.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AgsikProof
 

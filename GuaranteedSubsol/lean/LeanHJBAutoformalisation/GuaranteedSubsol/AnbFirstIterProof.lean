@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
 
 /-!
 # ANB: Lemma lem:first_iter, proofs
@@ -17,6 +19,8 @@ of `Γ' = max (ū, min (nτ, Γ))`, so Dijkstra's method stays put and `û_n = n
 `t_n = nτ`, `Δ_n = 0`, `B_n = ∅`, and the next state again satisfies `FirstInv`, with `ū = nτ` and
 the guess `(n + 1)τ` (`step_first`). The initial state satisfies `FirstInv`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbFirstIterProof
 

@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Basic.Real.Basic
-import Mathlib.Logic.Function.Iterate
-import Mathlib.Data.ENat.Basic
+module
+
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Logic.Function.Iterate
+public import Mathlib.Data.ENat.Basic
 
 /-!
 # Global iteration
@@ -19,6 +21,8 @@ updates at any point is the number of passes. The number of passes takes values 
 `⊤` when the while loop never exits, so that a bound `passes ≤ N` also expresses termination; the
 output is then the junk value obtained after `0` passes.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

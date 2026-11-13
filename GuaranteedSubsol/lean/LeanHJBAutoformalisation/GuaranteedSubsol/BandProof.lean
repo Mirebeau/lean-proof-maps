@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Band
-import LeanHJBAutoformalisation.GuaranteedSubsol.Restriction
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Band
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Restriction
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Tactic.Linarith
 
 /-!
 # An operator acting on a band: basic properties
@@ -15,6 +17,8 @@ The band operator `bandOp Φ B w` inherits monotonicity and `ρ`-sub-additivity 
 points of `B` (`monotone_bandOp`, `subAdditive_bandOp`), and is related to the restriction `Φ_B`
 by `restrictOp_bandExtend`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.BandProof
 

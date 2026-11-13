@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
 /-!
 # Kruzkov transform of GuaranteedSubsolutions (Introduction)
@@ -17,6 +19,8 @@ REVIEW: `kruzkov` takes the inverse timescale `αinv = 1/α`, while `kruzkovInv`
 paper's `E_α` and `E_α⁻¹` correspond to `kruzkov (1/α)` and `kruzkovInv α`,
 with `α > 0` to be stated as a theorem hypothesis.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

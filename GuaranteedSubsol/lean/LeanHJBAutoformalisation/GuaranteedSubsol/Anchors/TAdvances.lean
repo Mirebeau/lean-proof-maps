@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.TAdvancesProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.TAdvancesProof
 
 /-!
 # Frozen statement: the tolerance criterion advances in the narrow band
@@ -18,6 +20,8 @@ assumptions `v̄ - Φ v̄ ≤ 0` and `0 ≤ v̲ - Φ v̲` of (a) are dropped, be
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

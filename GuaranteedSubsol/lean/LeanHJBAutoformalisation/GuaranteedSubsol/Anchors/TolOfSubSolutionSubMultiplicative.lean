@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.TolProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.TolProof
 
 /-!
 # Frozen statement: tolerance from a sub-solution, sub-multiplicative case
@@ -16,6 +18,8 @@ then `(1 - ε/ν) u_* ≤ ū ≤ u_*`.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
-import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
+public import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
 
 /-!
 # Transfer of the scheme axioms to the monotone extension
@@ -18,6 +20,8 @@ Memory and (strict) causality additionally require `Λ` monotone and `X` finite:
 the hypotheses of the real axioms. The other axioms transfer for an arbitrary `Λ`, by
 transforming the finite minorants in the supremum defining `Λ_∞`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.TAdvancesProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovRpowProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.PowrDiffProof
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.TAdvancesProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovRpowProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.PowrDiffProof
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 
 /-!
 # The tolerance criterion advances, unknown parameters: proof
@@ -19,6 +21,8 @@ timescale `β`, and intertwines `Φ_α` and `Φ_β`. The assumptions (a), (b), (
 `|a^r - b^r| ≤ |a - b|^r`. Then `t_advances` applies with timescale `β` and sub-additivity
 constant `σ`, and the conclusion is pulled back by the monotonicity of `v ↦ -(-v)^r`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.TAdvancesWithUnknownProof
 

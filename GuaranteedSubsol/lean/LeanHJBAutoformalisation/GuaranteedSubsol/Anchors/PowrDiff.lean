@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.PowrDiffProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.PowrDiffProof
 
 /-!
 # Frozen statement: difference of powers
@@ -14,6 +16,8 @@ Source: Lemma lem:powr_diff (Complexity.tex): for all `a, b ≥ 0` and `r ∈ [0
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

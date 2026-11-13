@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbMaxWidthProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbMaxWidthProof
 
 /-!
 # Frozen statement: the half-width of the narrow band of the ANB is bounded
@@ -25,6 +27,8 @@ equal by definition).
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

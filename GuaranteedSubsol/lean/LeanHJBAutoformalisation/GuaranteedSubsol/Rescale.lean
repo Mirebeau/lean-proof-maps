@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
-import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
+public import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
 
 /-!
 # Rescaling of an operator
@@ -18,6 +20,8 @@ sub-multiplicativity, dependency and comparison (`C'`) are divided by `α`. In K
 
 Not from the paper: introduced at the author's request.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.StrictCausalSubaddProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.StrictCausalSubaddProof
 
 /-!
 # Frozen statement: strict causality implies sub-additivity in Kruzkov coordinates
@@ -15,6 +17,8 @@ being unneeded. `X` is finite (standing assumption).
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
 
 /-!
 # Frozen statement: line anb:hatu of the ANB computes the solution `û_n`
@@ -15,6 +17,8 @@ Source: Algorithm algo:anb, line anb:hatu (Intro.tex), and Prop. prop:Dijkstra_b
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

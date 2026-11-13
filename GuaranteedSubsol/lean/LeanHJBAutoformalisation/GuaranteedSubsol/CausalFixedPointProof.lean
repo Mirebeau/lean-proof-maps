@@ -3,11 +3,13 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExtTransfer
-import LeanHJBAutoformalisation.GuaranteedSubsol.MonotoneExtension
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExtTransfer
+public import LeanHJBAutoformalisation.GuaranteedSubsol.MonotoneExtension
 
 /-!
 # Fixed point of a monotone causal operator: proofs
@@ -19,6 +21,8 @@ comparison principle for causal operators (Prop. prop:comp_of_causal, with `Int 
 above every sub-solution and below every super-solution. A linear order on `X` (tie-breaking in
 Dijkstra's method) is chosen from finiteness.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.CausalFixedPointProof
 

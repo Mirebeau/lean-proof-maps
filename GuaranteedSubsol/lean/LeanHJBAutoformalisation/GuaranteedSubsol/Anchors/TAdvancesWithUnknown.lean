@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.TAdvancesWithUnknownProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.TAdvancesWithUnknownProof
 
 /-!
 # Frozen statement: the tolerance criterion advances, unknown parameters
@@ -19,6 +21,8 @@ of (a), `T⁻ < T⁺` and `0 < ρ` are dropped, being unused (the paper assumes 
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

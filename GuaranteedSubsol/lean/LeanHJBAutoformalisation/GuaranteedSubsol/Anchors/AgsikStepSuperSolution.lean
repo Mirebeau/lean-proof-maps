@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AgsikProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AgsikProof
 
 /-!
 # Frozen statement: the AGSIK preserves super-solutions
@@ -13,6 +15,8 @@ Source: Algorithm algo:agsik (AGSI2.tex), "Ensures at termination: `Λ u ≤ u`"
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

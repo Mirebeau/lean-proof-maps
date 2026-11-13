@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalApplyMinProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalApplyMinProof
 
 /-!
 # Frozen statement: a causal operator ignores values above its output
@@ -13,6 +15,8 @@ Source: Corol. corol:G_min_u_t (Complexity.tex), scalar form: if `Γ` is causal,
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

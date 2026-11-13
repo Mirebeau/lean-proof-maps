@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Data.Finset.Max
-import Mathlib.Data.Prod.Lex
-import Mathlib.Data.Fintype.Basic
+module
+
+public import Mathlib.Data.Finset.Max
+public import Mathlib.Order.Prod.Lex.Basic
+public import Mathlib.Data.Fintype.Basic
 
 /-!
 # Ordered partial maps
@@ -26,6 +28,8 @@ Each operation returns its result (if any) together with the updated map:
 * `pop`: the output of `bot`, and the erasure of that entry; cost `2` (`1` if there is no entry);
 * `entriesIco Tm Tp`: the points `x` with `Tm ≤ v x < Tp`; cost `1 + #W`, where `W` is the output.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

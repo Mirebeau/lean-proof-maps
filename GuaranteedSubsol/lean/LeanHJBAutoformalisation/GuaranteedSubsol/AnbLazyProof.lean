@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbLazy
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbMaxWidthProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ULessTProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalExtProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbLazy
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbMaxWidthProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ULessTProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalExtProof
 
 /-!
 # The ANB with a placeholder is equivalent to the ANB: proof
@@ -25,6 +27,8 @@ two programs are related by `u̲~ = u̲`, `ũ^{⋄→(n-1)τ} = ū`, `ǔ^init = 
 * Dijkstra's method updates a point at most once, exactly when its value decreases below the
   guess; `û(x) < û^init(x)` iff `û(x)^{<T} < û^init(x)^{<T}`, so the counters coincide.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbLazyProof
 

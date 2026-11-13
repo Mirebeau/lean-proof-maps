@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbComplexityProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterKruzkovProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.TAdvancesWithUnknownProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbComplexityProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIterKruzkovProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.TAdvancesWithUnknownProof
 
 /-!
 # ANB with a small parameter `α`: proofs
@@ -26,6 +28,8 @@ constants `β ≥ α` and `σ < 1` (`AnbParams.WithUnknown`).
   generic versions in `AnbNGammaProof` and `AnbNiterProof`; Theorem th:complexity_withUnknown
   assembles these results (`complexity`).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbWithUnknownProof
 

@@ -3,11 +3,13 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbBnCompProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbFirstIterProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.TAdvancesProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.Lambda0SubaddProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbBnCompProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbFirstIterProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.TAdvancesProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Lambda0SubaddProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
 
 /-!
 # ANB: Corollary corol:max_width, proofs
@@ -28,6 +30,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.anbRunData_Δ_lt_Δmax`
   Prop. prop:t_advances applied to `ū_{k+1}`, `u̲_{k+1}` shows `t_{k+1} ≥ t_k + Δ_k / 2`, hence
   `Δ_{k+1} ≤ Δ_k / 2 + τ < Δ_max / 2 + τ ≤ Δ_max` (this uses `Δ_max ≥ 2τ`).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbMaxWidthProof
 

@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Basic.Real.Basic
-import Mathlib.Data.Set.Piecewise
+module
+
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Data.Set.Piecewise
 
 /-!
 # Restriction of an operator to a subdomain
@@ -15,6 +17,8 @@ Prop. prop:monotonic_Phi (Complexity.tex): `Λ_B u (x) = Λ u (x)` if `x ∈ B`,
 This is a global operator `(X → ℝ) → X → ℝ`; at a point `x ∈ B` its scalar form is `(Λ · x)`, and
 at `x ∉ B` it is the evaluation `u ↦ u x`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

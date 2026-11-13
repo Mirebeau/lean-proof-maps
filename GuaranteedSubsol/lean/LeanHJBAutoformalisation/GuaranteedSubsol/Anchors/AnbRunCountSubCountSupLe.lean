@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNiterProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNiterProof
 
 /-!
 # Frozen statement: at most `N_Λ` updates of `ū` and of `u̲` at each point in the ANB
@@ -24,6 +26,8 @@ ordered (tie-breaking). Constants renamed with Greek letters (`Δmax`, `ΔplusMa
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

@@ -3,12 +3,14 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ULessTProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapCorrectProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalExtProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinMonCausalProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ULessTProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapCorrectProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalExtProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinMonCausalProof
 
 /-!
 # Existence and uniqueness of the fixed points of lem:u_less_t and lem:max_min
@@ -21,6 +23,8 @@ every point, has a fixed point, reached by algo:Dijkstra from the super-solution
 lem:u_less_t are monotone and causal (lem:causal_mix, prop:causal_formulation). For lem:max_min,
 `û` is a fixed point (`MaxMinProof.max_min_fixedPoint`), unique by `CausalProof.le_of_causal_real`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ExistsUniqueProof
 

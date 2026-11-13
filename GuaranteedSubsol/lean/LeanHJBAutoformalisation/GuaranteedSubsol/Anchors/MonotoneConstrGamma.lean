@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ConstrGammaProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ConstrGammaProof
 
 /-!
 # Frozen statement: the constructed underestimating operator is monotone
@@ -13,6 +15,8 @@ Source: Prop. prop:constr_Gamma (Intro.tex), monotonicity of `Γ u := Λ[0] + mi
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

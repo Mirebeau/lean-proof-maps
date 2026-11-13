@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNiterProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNiterProof
 
 /-!
 # ANB: Theorem th:complexity, proof
@@ -16,6 +18,8 @@ properties of Prop. prop:always_subsol at the stopping index, the bound on `Δ_n
 passes of the inner loops (`passes_le`), and the counts of Corollary corol:NGamma and
 Theorem th:complexity (`card_band_le`, `countSub_countSup_le`, `countHat_le`).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbComplexityProof
 

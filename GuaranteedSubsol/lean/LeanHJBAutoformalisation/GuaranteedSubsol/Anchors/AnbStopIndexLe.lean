@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbMaxWidthProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbMaxWidthProof
 
 /-!
 # Frozen statement: the ANB terminates within `⌈n_max⌉ + 1` iterations
@@ -20,6 +22,8 @@ linearly ordered (tie-breaking). Constants renamed with Greek letters (`Δmax`, 
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

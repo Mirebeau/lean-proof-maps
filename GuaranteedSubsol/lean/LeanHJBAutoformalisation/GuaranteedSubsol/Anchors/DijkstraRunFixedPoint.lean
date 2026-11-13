@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
 
 /-!
 # Frozen statement: termination of the generalized Dijkstra algorithm at a fixed point
@@ -15,6 +17,8 @@ are the case `T = ∞`, and imply the general case applied to `Γ^{<T}` (`dijkst
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

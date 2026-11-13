@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Basic.Finite.Defs
-import Mathlib.Data.Set.Finite.Lemmas
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Basic.Finite.Defs
+public import Mathlib.Data.Set.Finite.Lemmas
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Comparison principle for a monotone causal operator
@@ -20,6 +22,8 @@ The proof is by contradiction: at a point `x` minimizing `v` among the points wh
 with `t := v x`, the truncations `min u t ≤ min v t` are ordered, and causality at `x` transfers
 the resulting inequality `Γ (min u t) x ≤ Γ (min v t) x` to `Γ u x` and `Γ v x` above level `t`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.CausalProof
 

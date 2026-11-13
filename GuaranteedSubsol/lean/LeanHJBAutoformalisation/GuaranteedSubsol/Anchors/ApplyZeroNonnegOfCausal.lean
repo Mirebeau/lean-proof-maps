@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ApplyZeroNonnegProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ApplyZeroNonnegProof
 
 /-!
 # Frozen statement: `Λ[0] ≥ 0` under Assumption assum:all
@@ -16,6 +18,8 @@ fact `Λ[0] ≥ Γ[0] > 0` on `Int X`). Global operators `(X → ℝ) → X → 
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

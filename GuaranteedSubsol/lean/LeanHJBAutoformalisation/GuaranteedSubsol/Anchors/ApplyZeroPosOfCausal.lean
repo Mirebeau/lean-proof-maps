@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ApplyZeroNonnegProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ApplyZeroNonnegProof
 
 /-!
 # Frozen statement: a causal operator is positive on `0`
@@ -13,6 +15,8 @@ causal (and additively invariant), then `Γ[0] > 0` (scalar form, at a point of 
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

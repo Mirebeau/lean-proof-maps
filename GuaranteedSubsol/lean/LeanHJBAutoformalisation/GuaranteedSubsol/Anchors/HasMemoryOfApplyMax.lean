@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.CpastFormulationProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CpastFormulationProof
 
 /-!
 # Frozen statement: eq. (Lambda_max_u_t) implies `C_past`-memory
@@ -15,6 +17,8 @@ The scalar operator `Λ : (X → ℝ) → ℝ` stands for `(Λ · x)`.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

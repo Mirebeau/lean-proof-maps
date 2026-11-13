@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.SubsolGrowthProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.SubsolGrowthProof
 
 /-!
 # Frozen statement: growth of a sub-solution above a level
@@ -18,6 +20,8 @@ omitted. Conclusion: `u ≥ t + (u_* - (1+ε) t - C_past - C'_Γ) / C_Γ` on `{u
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

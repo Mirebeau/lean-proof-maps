@@ -3,15 +3,17 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Dijkstra
-import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIteration
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAGSI
-import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
-import LeanHJBAutoformalisation.GuaranteedSubsol.Band
-import Mathlib.Data.Finset.Lattice.Fold
-import Mathlib.Data.Fintype.Card
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Dijkstra
+public import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalIteration
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAGSI
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Band
+public import Mathlib.Data.Finset.Lattice.Fold
+public import Mathlib.Data.Fintype.Card
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 
 /-!
 # Adaptive Narrow Band (ANB)
@@ -47,6 +49,8 @@ step `anbStepWith`, of the run `anbRunWith`, etc.: the ANB itself (`anbStep`, `a
 the global iteration (`anbGlobalIter`), and the variant of Theorem th:complexity_with_agsi
 (`anbAgsiRun`, ...) uses the parallel AGSI (`anbAgsi`, algo:agsi_parallel).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

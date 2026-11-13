@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.MonotoneExtension
-import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ContractivityProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.MonotoneExtension
+public import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ContractivityProof
 
 /-!
 # Comparison principle and fixed point for `Λ`, via the Kruzkov transform
@@ -18,6 +20,8 @@ on finite values, and conjugates `Λ` (at points where it is monotone) to `Φ_α
 follow from the comparison principle and the unique fixed point of the monotone sub-additive
 operator `Φ_α`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ComparisonLambdaProof
 

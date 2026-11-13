@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapProof
 
 /-!
 # The cost of the ANB with sorted lists: proof
@@ -21,6 +23,8 @@ many times as it was in an earlier band (`credit`): after it is in `W`, it becom
 gets a value `< nτ` (it is then selected by Dijkstra's method), so a new real value `≥ nτ` can only
 come from a later band.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbHeapCostProof
 

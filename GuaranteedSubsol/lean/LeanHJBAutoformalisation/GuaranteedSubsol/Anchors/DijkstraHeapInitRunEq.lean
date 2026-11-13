@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapProof
 
 /-!
 # Frozen statement: Dijkstra's method with a sorted list, from scratch
@@ -20,6 +22,8 @@ the stencil property of `Γ`. `X` is finite and linearly ordered (tie-breaking).
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

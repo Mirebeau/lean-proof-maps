@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExtTransfer
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExtTransfer
 
 /-!
 # Generalized Dijkstra for the extension of a real causal scheme: proof
@@ -14,6 +16,8 @@ Provider proof for the frozen anchor `GuaranteedSubsol.dijkstraRun_ext_of_causal
 (`monotone_monotoneExtension`), and causal at each point when `Γ` is monotone and causal there
 (`Causal.ext`); the results for an operator on `ℝ_∞` (`DijkstraProof`) then apply.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.DijkstraExtProof
 

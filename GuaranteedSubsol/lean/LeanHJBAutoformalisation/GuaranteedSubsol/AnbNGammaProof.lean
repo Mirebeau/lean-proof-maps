@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbMaxWidthProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbMaxWidthProof
 
 /-!
 # ANB: Corollary corol:NGamma, proofs
@@ -21,6 +23,8 @@ Provider proofs for the frozen anchors of Corollary corol:NGamma, see `ANCHORS.m
   place of `Δ⁺_max`, `N'_Λ`; suffix `_of`), so that they also serve the unknown-constants version
   (`AnbWithUnknownProof`); the versions under `Hyp` instantiate `Dm = Δ_max`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbNGammaProof
 

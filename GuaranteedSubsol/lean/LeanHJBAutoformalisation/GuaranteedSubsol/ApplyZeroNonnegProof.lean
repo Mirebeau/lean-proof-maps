@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Tactic.Linarith
 
 /-!
 # `Λ[0] ≥ 0` from the causality of `Γ`: proofs
@@ -15,6 +17,8 @@ applied to `u = 0`, `v = 1` at the level `t = 0` gives `min {Γ[0], δ} = min {�
 `δ > 0`, which forces `Γ[0] ≥ δ`. Hence `Λ[0] ≥ Γ[0] > 0` on `Int X`, while `Λ[0] = u_bd ≥ 0` on
 `∂X`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ApplyZeroNonnegProof
 

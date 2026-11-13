@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapCostProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapCostProof
 
 /-!
 # Frozen statement: cost accounting of the ANB with sorted lists
@@ -24,6 +26,8 @@ Hypotheses: those of `anbHeapRun_equiv` (`Î“` monotone, causal, with stencils `ð
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

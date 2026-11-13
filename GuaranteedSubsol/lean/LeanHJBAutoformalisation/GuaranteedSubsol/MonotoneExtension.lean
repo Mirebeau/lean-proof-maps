@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
-import Mathlib.Topology.Order.WithTop
-import Mathlib.Topology.Order.MonotoneConvergence
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Kruzkov
+public import Mathlib.Topology.Order.WithTop
+public import Mathlib.Topology.Order.MonotoneConvergence
 
 /-!
 # Monotone extension: agreement with the paper
@@ -16,6 +18,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.monotoneExtension_coe` 
 the paper's limit `lim_{t→∞} Λ min {u,t}` (Intro.tex eq. eqdef:monotone_extension) when `X` is
 finite.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.MonotoneExtension
 

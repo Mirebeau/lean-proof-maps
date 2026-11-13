@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.CutoffProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CutoffProof
 
 /-!
 # Frozen statement: `min {u,t} = min {v,t} ⇔ u^{<t} = v^{<t}`, scalar form
@@ -15,6 +17,8 @@ at every point.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

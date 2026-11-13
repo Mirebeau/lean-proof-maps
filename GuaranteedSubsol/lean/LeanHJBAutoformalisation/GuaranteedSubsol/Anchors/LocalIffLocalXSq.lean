@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.LocalXProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.LocalXProof
 
 /-!
 # Frozen statement: the two local formulations of sub-additivity, with `O(t²)` remainders
@@ -17,6 +19,8 @@ any operator `Λ`; `αinv = 1/α`. Together with `kruzkov_local_of_subAdditive`,
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 open Filter Topology
 

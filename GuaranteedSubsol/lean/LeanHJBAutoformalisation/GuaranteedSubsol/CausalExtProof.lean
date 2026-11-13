@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
-import Mathlib.Basic.Finite.Defs
-import Mathlib.Data.Set.Finite.Lemmas
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AxiomsExt
+public import Mathlib.Basic.Finite.Defs
+public import Mathlib.Data.Set.Finite.Lemmas
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Comparison principle for a monotone causal operator on `ℝ_∞`
@@ -21,6 +23,8 @@ where `v < u`, the value `v x` is finite, say `v x = t`; the truncations `min u 
 ordered, and causality at `x` transfers `Γ (min u t) x ≤ Γ (min v t) x` to `Γ u x` and `Γ v x`
 above level `t`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.CausalExtProof
 

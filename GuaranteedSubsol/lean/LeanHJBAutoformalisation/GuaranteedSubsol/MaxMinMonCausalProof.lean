@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalMixProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalMixProof
 
 /-!
 # Monotonicity and causality of `max {ū, min {T, Γ}}`: proofs
@@ -13,6 +15,8 @@ Provider proofs for the frozen anchors `GuaranteedSubsol.monotone_max_min` and
 (Complexity.tex), scalar form, from lem:causal_mix and the fact that constant operators are
 monotone and causal.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.MaxMinMonCausalProof
 

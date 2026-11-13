@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.PowCvxProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovRpowProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.PowCvxProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovRpowProof
 
 /-!
 # Global iteration for `Φ_α` when `Φ_β` is `σ`-sub-additive: proofs
@@ -22,6 +24,8 @@ Provider proof for the frozen anchor `GuaranteedSubsol.globalIterRun_passes_le_w
 The core (`sub_resid`, `sup_resid`) is stated for an arbitrary pair of conjugate operators, so that
 it also applies to operators acting on a band.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.GlobalIterKruzkovProof
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinProof
 
 /-!
 # Frozen statement: fixed point of the truncated operator `max {ū, min {T, Γ}}`
@@ -19,6 +21,8 @@ only. Uniqueness is not part of the anchor; it follows from `le_of_causal_real`.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

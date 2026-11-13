@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.CstSubsolProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CstSubsolProof
 
 /-!
 # Frozen statement: a `δ`-strictly causal operator is `≥ δ` on `0`
@@ -14,6 +16,8 @@ Source: Prop. prop:cst_subsol (Intro.tex), item enum:Lambda0_delta, strictly cau
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

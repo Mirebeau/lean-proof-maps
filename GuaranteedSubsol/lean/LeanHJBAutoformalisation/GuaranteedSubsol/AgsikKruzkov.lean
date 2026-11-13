@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AgsikProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonPrinciple
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AgsikProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonPrinciple
 
 /-!
 # Termination of the AGSIK for the extension of a real scheme: proof
@@ -18,6 +20,8 @@ the comparison principle on `ℝ_∞` follows from `Ext.hasComparisonPrinciple_o
 causality is needed. The Kruzkov timescale `β` is unrelated to the timescale `α = 1/αinv` of
 the AGSIK.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AgsikKruzkovProof
 

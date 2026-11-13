@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapCostProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapCostProof
 
 /-!
 # Frozen statement: complexity of the ANB with sorted lists under uniform bounds
@@ -24,6 +26,8 @@ Hypotheses: those of `anbHeapRun_equiv`. `X` is finite and linearly ordered (tie
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapComplexity
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapComplexity
 
 /-!
 # Correctness and complexity of the ANB with sorted lists (provider proofs)
@@ -17,6 +19,8 @@ The conclusions of the complexity theorems for algo:anb (`AnbComplexityProof.com
 `anbLazyRun_equiv` and `anbHeapRun_equiv` (`transfer`), and the cost bounds are those of
 `anbHeapRun_complexity` and `anbHeapRun_complexity_withUnknown`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbHeapCorrectComplexityProof
 

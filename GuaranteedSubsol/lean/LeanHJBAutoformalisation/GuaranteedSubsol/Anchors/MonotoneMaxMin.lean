@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinMonCausalProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.MaxMinMonCausalProof
 
 /-!
 # Frozen statement: monotonicity of `max {ū, min {T, Γ}}`
@@ -14,6 +16,8 @@ monotone, so is `u ↦ max {c, min {T, Γ u}}`, where `c` stands for `ū (x)`. T
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

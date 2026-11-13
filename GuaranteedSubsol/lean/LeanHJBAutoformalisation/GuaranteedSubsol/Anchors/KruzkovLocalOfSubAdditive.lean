@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.SubaddLocalFwdProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.SubaddLocalFwdProof
 
 /-!
 # Frozen statement: sub-additivity of `Φ_α` implies the local expansion, with `O(t²)`
@@ -17,6 +19,8 @@ unused in this direction; `0 ≤ ρ` in place of the paper's `ρ > 0`.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 open Filter Topology
 

@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapCostProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbComplexityProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbWithUnknownProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbAgsiProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeapCostProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbComplexityProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbWithUnknownProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbAgsiProof
 
 /-!
 # Complexity of the ANB with sorted lists (prop:complexity_lazy): the three instances
@@ -29,6 +31,8 @@ which is eq. eq:anb_cost, each operation on a list having cost `O(ln N)`. Not co
 `Sc`, two operations per iteration, covered by the term `O(n_max)`); the evaluations of `Λ` in the
 final test of each inner loop (`countSub`, `countSup` count the updates, as in the paper).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

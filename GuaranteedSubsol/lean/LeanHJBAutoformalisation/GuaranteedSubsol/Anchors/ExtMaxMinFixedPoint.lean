@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ULessTProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ULessTProof
 
 /-!
 # Frozen statement: fixed point of `max {ū, min {T, Γ}}` on `ℝ_∞`
@@ -18,6 +20,8 @@ only. Uniqueness is not part of the anchor; it follows from `le_of_causal_ext`.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.Ext
 

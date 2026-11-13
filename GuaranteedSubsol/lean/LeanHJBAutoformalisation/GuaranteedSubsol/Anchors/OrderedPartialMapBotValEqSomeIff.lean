@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMapProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMapProof
 
 /-!
 # Frozen statement: `bot` of an ordered partial map returns the smallest entry
@@ -15,6 +17,8 @@ broken by the order of `X`). `X` is finite and linearly ordered, `V` linearly or
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.OrderedPartialMap
 

@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeap
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbLazyProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapCorrectProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbHeap
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbLazyProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.DijkstraHeapCorrectProof
 
 /-!
 # The ANB with sorted lists is equivalent to the ANB with a placeholder: proof
@@ -29,6 +31,8 @@ update of line anb_lazy:olu_gets_hatu correct: `ǔ = ∞` at the placeholders (`
   meet `B_n`, and `max {ū, Γ ǔ} < ǔ` is unchanged when `ū` becomes `max {ū, min {T, ǔ}}`, since
   the keys are `≥ T` (`L_step`).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AnbHeapProof
 

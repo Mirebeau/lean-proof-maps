@@ -3,12 +3,14 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Algebra.Order.Field.Basic
-import Mathlib.Algebra.Order.Archimedean.Real.Basic
-import Mathlib.Data.Set.Finite.Lattice
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Algebra.Order.Field.Basic
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+public import Mathlib.Data.Set.Finite.Lattice
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
 
 /-!
 # `C_past`-memory and eq. (Lambda_max_u_t): proofs
@@ -23,6 +25,8 @@ prop:Cpast_formulation (Complexity.tex), scalar form, both implications.
   for every `k : ℕ`, where `ε = Λ u - (t + C)`; since `X` is finite, `u - k ε 1_{u ≤ t} ≤ v`
   for `k` large, hence `Λ u ≤ Λ v`. Symmetry concludes.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.CpastFormulationProof
 

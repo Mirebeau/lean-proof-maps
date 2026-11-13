@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNiterProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNiterProof
 
 /-!
 # Frozen statement: the inner loops of the ANB stop after at most `N''_Λ` passes
@@ -23,6 +25,8 @@ finite and linearly ordered (tie-breaking). Constants renamed with Greek letters
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

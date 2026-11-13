@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiCplxProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiSubProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiResultProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiCplxProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiSubProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiResultProof
 
 /-!
 # Prop. prop:cplx_agsi_parallel: termination
@@ -16,6 +18,8 @@ Prop. prop:cplx_agsi_parallel (AGSI2.tex), the number of updates at each point i
 uniformly along the loop (`ParallelAgsiCplxProof.count_le_of_subAdditive`), hence the loop stops
 (`ParallelAgsiResultProof.passes_lt_top_of_count_le`).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ParallelAgsiTermProof
 

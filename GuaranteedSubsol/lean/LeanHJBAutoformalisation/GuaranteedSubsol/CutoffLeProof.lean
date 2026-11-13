@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Cutoff
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Cutoff
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Cutoffs `a^{≤t}`: proofs
@@ -13,6 +15,8 @@ Provider proof for the frozen anchor `GuaranteedSubsol.exists_min_eq_min_iff_cut
 (see `ANCHORS.md`): Prop. prop:causal_formulation (Complexity.tex), second equivalence,
 scalar form.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.CutoffLeProof
 

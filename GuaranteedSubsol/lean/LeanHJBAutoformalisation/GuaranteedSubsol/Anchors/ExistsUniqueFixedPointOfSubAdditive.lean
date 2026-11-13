@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ContractivityProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ContractivityProof
 
 /-!
 # Frozen statement: fixed point of a monotone `ρ`-sub-additive operator, `ρ < 1`
@@ -15,6 +17,8 @@ the sup norm.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

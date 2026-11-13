@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMapProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMapProof
 
 /-!
 # Frozen statement: `entriesIco` of an ordered partial map returns the entries in `[Tm, Tp)`
@@ -14,6 +16,8 @@ with an entry `v x = t` such that `Tm ≤ t < Tp`. `X` is finite, `V` linearly o
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.OrderedPartialMap
 

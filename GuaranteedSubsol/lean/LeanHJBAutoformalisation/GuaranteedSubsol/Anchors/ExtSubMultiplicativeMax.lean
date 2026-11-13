@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalMixProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ExtCausalMixProof
 
 /-!
 # Frozen statement: `max` of two SubMultiplicative operators on `ℝ_∞`
@@ -14,6 +16,8 @@ Monotonicity is Mathlib's `Monotone.max`.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.Ext
 

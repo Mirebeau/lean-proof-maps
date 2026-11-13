@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiCplxProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.Reflect
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiCplxProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Reflect
 
 /-!
 # Parallel AGSI, sub-solution variant: proofs by reflection
@@ -15,6 +17,8 @@ operator `reflectOp Φ = (v ↦ -Φ (-v))` started from `-v`, up to the sign of 
 the comparison principle, and exchanges sub- and super-solutions (`Reflect.lean`), so the
 results for the sub-solution variant follow from those for the super-solution version.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ParallelAgsiSubProof
 

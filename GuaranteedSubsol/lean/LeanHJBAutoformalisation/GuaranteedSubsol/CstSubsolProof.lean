@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Prop. prop:cst_subsol: the values of the operators on constants
@@ -19,6 +21,8 @@ below it, see `ANCHORS.md`:
   comparison (`le_apply_const_of_comparable`), or under `Γ[0] ≥ 0` and `Γ ≤ Λ`
   (`le_apply_const_of_le`).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.CstSubsolProof
 

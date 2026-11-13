@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Cutoff
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Cutoff
 
 /-!
 # Cutoffs: proofs
@@ -12,6 +14,8 @@ Provider proof for the frozen anchor `GuaranteedSubsol.min_eq_min_iff_cutoffLt_e
 (see `ANCHORS.md`): Prop. prop:causal_formulation (Complexity.tex), cutoffs of eq. eqdef:u_less_t,
 scalar form.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.CutoffProof
 

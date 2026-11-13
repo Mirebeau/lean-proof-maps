@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Anb
-import LeanHJBAutoformalisation.GuaranteedSubsol.Cutoff
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Anb
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Cutoff
 
 /-!
 # The ANB with a placeholder (AnbEquivalence note)
@@ -27,6 +29,8 @@ Dijkstra's method as `ǔ^init ∈ ℝ_∞^X`, from which the guess of the ANB is
 The stopping test is `(1 + ε) ũ^{⋄→(n-1)τ} ≥ u̲~` (`anbLazyDone`), and the initial state is
 `ũ_0 = 0`, `u̲~_0 = ∞`, `ǔ_0^init = ∞`, with the iteration `n = 0` vacuous as for the ANB.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

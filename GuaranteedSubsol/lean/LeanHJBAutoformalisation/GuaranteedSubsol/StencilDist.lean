@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Data.Set.Basic
-import Mathlib.Data.Nat.Find
+module
+
+public import Mathlib.Data.Set.Basic
+public import Mathlib.Data.Nat.Find
 
 /-!
 # Distance to the boundary along the stencils
@@ -13,6 +15,8 @@ The graph distance `d_V(x, ∂X)` of the proof of Prop. prop:constr_Gamma (Effec
 number of edges from `x` to the boundary `∂X = Iᶜ` on the oriented graph defined by the stencils,
 `x → y` for `x ∈ I` and `y ∈ V x`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

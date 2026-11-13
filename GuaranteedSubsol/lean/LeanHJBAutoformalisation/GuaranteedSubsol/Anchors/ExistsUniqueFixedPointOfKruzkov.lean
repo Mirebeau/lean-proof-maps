@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
 
 /-!
 # Frozen statement: unique fixed point of `Λ`, below any super-solution
@@ -15,6 +17,8 @@ by the three conclusions.
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

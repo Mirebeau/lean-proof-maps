@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.CausalExtProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonLambdaProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CausalExtProof
 
 /-!
 # Sufficient conditions for the comparison principle
@@ -19,6 +21,8 @@ restated from the proved comparison results:
   conjugation `Φ_α ∘ E_α = E_α ∘ Λ_∞`.
 `X` is finite throughout.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AgsikKruzkov
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AgsikKruzkov
 
 /-!
 # Frozen statement: termination of the AGSIK for the extension of a real scheme
@@ -16,6 +18,8 @@ stopping criterion after finitely many steps. No causality is assumed. `X` is fi
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

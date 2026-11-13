@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
 /-!
 # Reformulation of the intermediate stopping criterion of the AGSIK: proof
@@ -20,6 +22,8 @@ inequality (`agsik_until_iff`), not with `≤` as written in the paper. The conv
 encoded by the alternative `a ≥ n α ln 2 ∨ …`: indeed `t := 1 - exp((a - n α ln 2)/α) ≤ 0` iff
 `a ≥ n α ln 2`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.AgsikCriterionProof
 

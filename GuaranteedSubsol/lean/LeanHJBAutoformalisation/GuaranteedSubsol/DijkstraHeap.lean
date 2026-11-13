@@ -3,11 +3,13 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Dijkstra
-import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMap
-import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalExt
-import Mathlib.Data.Fintype.Card
-import Mathlib.Data.ENat.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Dijkstra
+public import LeanHJBAutoformalisation.GuaranteedSubsol.OrderedPartialMap
+public import LeanHJBAutoformalisation.GuaranteedSubsol.GlobalExt
+public import Mathlib.Data.Fintype.Card
+public import Mathlib.Data.ENat.Basic
 
 /-!
 # Dijkstra's method with a sorted list
@@ -27,6 +29,8 @@ this is `dijkstraRun` (algo:Dijkstra with `T = ∞`); with a finite `T`, it is `
 to `Γ^{<T}` (`dijkstraCutOp`), as in the proof of Prop. prop:Dijkstra_correct. The while loop,
 which stops at the first unsuccessful test, is `dijkstraHeapLoop`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

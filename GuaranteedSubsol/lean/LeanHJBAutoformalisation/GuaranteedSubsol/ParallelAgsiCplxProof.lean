@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ContractivityProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonProof
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ContractivityProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonProof
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
 /-!
 # Parallel AGSI: number of updates per point (proof)
@@ -22,6 +24,8 @@ the paper's proof, with `v_n` the map after `n` passes.
 * Each update at `x` lowers `v(x)` by more than `η`, so at most `ξ/η ≤ 2/(1-ρ)²` updates occur
   at `x` after pass `N`, and at most `N` before (one per pass).
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.ParallelAgsiCplxProof
 

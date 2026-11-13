@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Fixed point of the truncated operator `max {ū, min {T, Γ}}`: proof
@@ -13,6 +15,8 @@ Provider proof for the frozen anchor `GuaranteedSubsol.max_min_fixedPoint` (see 
 Lemma lem:max_min (Complexity.tex). First `min {u,T} = min {û,T}`, since `ū ≤ u`; then causality
 gives `min {T, Γ û} = min {T, Γ u}`, and a lattice identity concludes `Γ' û = û`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.MaxMinProof
 

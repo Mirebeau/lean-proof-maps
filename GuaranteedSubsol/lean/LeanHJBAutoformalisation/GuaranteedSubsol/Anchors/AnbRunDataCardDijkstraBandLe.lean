@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNGammaProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.AnbNGammaProof
 
 /-!
 # Frozen statement: a point lies in at most `N_Γ` bands `B'_n` of the ANB
@@ -21,6 +23,8 @@ equal by definition).
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

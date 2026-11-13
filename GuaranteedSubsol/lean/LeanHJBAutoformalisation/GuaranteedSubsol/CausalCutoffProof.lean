@@ -3,9 +3,11 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import LeanHJBAutoformalisation.GuaranteedSubsol.CutoffProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.CutoffLeProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CutoffProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CutoffLeProof
 
 /-!
 # Causality in terms of cutoffs: proof
@@ -15,6 +17,8 @@ Prop. prop:causal_formulation (Complexity.tex), eq. (causal_old), scalar form. I
 scalar equivalences `CutoffProof.min_eq_min_iff_cutoffLt_eq` and
 `CutoffLeProof.exists_min_eq_min_iff_cutoffLe_eq`, through the embedding `ℝ → WithTop ℝ`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.CausalCutoffProof
 

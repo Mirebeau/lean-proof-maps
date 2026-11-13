@@ -3,8 +3,10 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import Mathlib.Analysis.MeanInequalitiesPow
-import Mathlib.Tactic.Linarith
+module
+
+public import Mathlib.Analysis.MeanInequalitiesPow
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Difference of powers: proof
@@ -13,6 +15,8 @@ Provider proof for the frozen anchor `GuaranteedSubsol.abs_rpow_sub_rpow_le` (se
 Lemma lem:powr_diff (Complexity.tex). Assuming `b ≤ a`, Mathlib's `Real.rpow_add_le_add_rpow`
 gives `a ^ r = (b + (a - b)) ^ r ≤ b ^ r + (a - b) ^ r`, and `b ^ r ≤ a ^ r` by monotonicity.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.PowrDiffProof
 

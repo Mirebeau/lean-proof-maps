@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonProof
-import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Tactic.Linarith
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ComparisonProof
+public import LeanHJBAutoformalisation.GuaranteedSubsol.KruzkovProof
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Tactic.Linarith
 
 /-!
 # The tolerance criterion advances in the narrow band: proof
@@ -18,6 +20,8 @@ multiplicative invariance `Φ (γ v) = γ Φ v`; on `J \ I` because `Φ` is cons
 `v̄ ≤ w` follows from assumptions (b) and (c). The comparison principle gives `v̄ ≤ w`, and the
 estimate eq. (ineq:t_advances) gives `w ≤ v̲ exp(-ε αinv u̲)` in the band `|u̲ - t| ≤ Δ/2`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol.TAdvancesProof
 

@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiCplxProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.ParallelAgsiCplxProof
 
 /-!
 # Frozen statement: number of updates per point of the parallel AGSI
@@ -18,6 +20,8 @@ no generality, since a `0`-sub-additive `Φ` is `ρ`-sub-additive for any `ρ > 
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

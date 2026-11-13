@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.CutoffLeProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.CutoffLeProof
 
 /-!
 # Frozen statement: `(∃ δ > 0, min {u,t+δ} = min {v,t+δ}) ⇔ u^{≤t} = v^{≤t}`, scalar form
@@ -14,6 +16,8 @@ paper's statement for `u, v ∈ ℝ^X` (a single `δ` for all points) additional
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 

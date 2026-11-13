@@ -3,10 +3,12 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
-import Mathlib.Analysis.SpecialFunctions.Exp
-import Mathlib.Order.Filter.AtTopBot.Basic
-import Mathlib.Topology.Order.Basic
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.Axioms
+public import Mathlib.Analysis.SpecialFunctions.Exp
+public import Mathlib.Order.Filter.AtTopBot.Basic
+public import Mathlib.Topology.Order.Basic
 
 /-!
 # The two local formulations of sub-additivity in Kruzkov coordinates: proof
@@ -15,6 +17,8 @@ Provider proof for the frozen anchor `GuaranteedSubsol.local_iff_local_x` (see `
 Prop. prop:subadd_local (Subadd.tex), (subadd_local) ⇔ (subadd_local_x). It is the change of
 variable `t' = c t` with `c = exp(-αinv Λ u) > 0`, together with `η' = η / c` (resp. `η c`).
 -/
+
+@[expose] public section
 
 open Filter Topology
 

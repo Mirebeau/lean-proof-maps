@@ -3,7 +3,9 @@ Copyright (c) 2026 Jean-Marie Mirebeau. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jean-Marie Mirebeau
 -/
-import LeanHJBAutoformalisation.GuaranteedSubsol.PowCvxProof
+module
+
+public import LeanHJBAutoformalisation.GuaranteedSubsol.PowCvxProof
 
 /-!
 # Frozen statement: the tangent inequality for `t ↦ t^s`
@@ -13,6 +15,8 @@ Source: Lemma lem:pow_cvx (Complexity.tex): for `0 ≤ a ≤ b` and `s ≥ 1`,
 
 State: see `ANCHORS.md`.
 -/
+
+@[expose] public section
 
 namespace GuaranteedSubsol
 
