@@ -4,7 +4,7 @@ Lean 4 / Mathlib formalization of the preprint
 
 > J.-M. Mirebeau, Y. Mouheb, *A narrow band method for non-causal discretizations of anisotropic
 > eikonal equations, with adaptive width, sub- and super-solution construction, and quasi-linear
-> complexity* (2026).
+> complexity* (2026), [hal-05861742](https://hal.science/hal-05861742).
 
 All the lemmas, propositions and theorems of the paper are stated and proved, with no `sorry` and
 only the standard axioms `propext`, `Classical.choice` and `Quot.sound`. The statements, with links
